@@ -1,0 +1,45 @@
+.c-header {
+    position: fixed;
+    color: $primary-color;
+    padding: 5px 0px;
+    z-index: 1;
+    transition: opacity 0.4s ease;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.4s ease all;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        &--item {
+            font-family: $primaryfont;
+            text-align: center;
+
+            &:hover {
+                transition: 0.4s ease all;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        &--logo {
+            width: 250px;
+
+            svg {
+                fill: $primary-color
+            }
+        }
+    }
+
+
+}
+
+.scroll {
+    transition: 0.4s ease all;
+    background-color: white;
+}
