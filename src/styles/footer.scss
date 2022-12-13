@@ -36,6 +36,7 @@
         display: flex;
         justify-content: start;
         &--instagram{ 
+            padding-left: 10px;
             svg{
                 cursor: pointer;
                 width: 40px;
@@ -47,6 +48,19 @@
             }        
         }
         &--facebook{
+            
+            svg{
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                fill:$primary-color;
+                &:hover{
+                    fill:$secondary-color;
+                }
+            }  
+        }
+        &--linkedin{
+            padding-left: 10px;
             svg{
                 cursor: pointer;
                 width: 40px;
