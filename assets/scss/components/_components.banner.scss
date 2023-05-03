@@ -1,0 +1,16 @@
+.c-banner{
+    &__title{
+        top: 35%;
+        left: 40%;
+        text-align: center;
+    }
+    &__title--bottom{
+        top: 90%;
+        left: 45%;
+        &:hover{
+            font-weight: bold;
+            transition: 0.4s all ease;
+            cursor: pointer;
+        }
+    }
+}

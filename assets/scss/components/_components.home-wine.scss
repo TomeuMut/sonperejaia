@@ -1,0 +1,19 @@
+.c-home-wine{    
+    &__title{
+
+    }
+    &__square{
+        transition: 0.4s ease all;
+        &--img{
+            z-index: 1;
+        }
+        &--title{
+
+        }
+        &:hover{
+            z-index: 9;            
+            transition: 0.4s ease all;      
+            filter: brightness(70%);                                                 
+        }
+    }
+}

@@ -1,0 +1,111 @@
+//Para una imagen se debe usar siempre un <picture> con esta clase, acompañada de su modificador, y dentro la <img> sin ninguna clase.
+// Por ejemplo si queremos una imagen cuadrada: <picture class='u-images u-images--100 '><img src='dummy.jpg' alt='dummy' title='dummy'/></picture>
+.c-images {
+  $this: &;
+    @apply
+        block
+        w-full
+        relative;
+    img, video, svg {
+        @apply w-full;
+    }
+    &:not(.c-images--free) {
+        img, video, svg {
+            @apply
+            absolute
+            h-full
+            top-0
+            left-0
+            object-cover;
+        }
+    }
+  // Para definir la relación de aspecto, se añade al picture la clase u-images con el modificador de un numero, que indica el % de alto respecto al ancho
+  // Por ejemplo u-images--100 daría una imagen cuadrada, al ser el alto el 100% del ancho.
+  @for $i from 1 through 200 {
+    $percent: percentage($i/100);
+    &--#{$i} {
+      padding-top: $percent;
+    }
+  }
+  &--background {
+      @apply
+          absolute
+          top-0
+          left-0
+          h-full;
+      z-index: -1;
+  }
+  &--parallax {
+      @apply
+          bg-fixed
+          bg-center
+          bg-no-repeat
+          bg-cover;
+  }
+  &--square {
+    padding-top: 100%;
+  }
+  &--circle {
+      @apply overflow-hidden;
+      padding-top: 100%;
+      border-radius: 50%;
+  }
+  &--fullheight {
+      @apply h-full;
+  }
+    &--auto {
+        img {
+            @apply relative h-auto #{!important};
+        }
+    }
+  &--contain {
+    img, svg{
+        @apply object-contain;
+    }
+  }
+  &--fw {
+      @apply
+      -ml-16
+      -mr-16
+      w-auto;
+  }
+  &--shadow {
+    box-shadow: 0 2px 11px 0 rgba(0,0,0,0.5);
+  }
+  &--gradient {
+    background: linear-gradient(318deg, rgba(48, 65, 153, 0.7) 0%, rgba(243, 24, 18, .7) 100%);
+  }
+  &--blur {
+      @apply absolute
+          left-0
+          top-0
+          w-full
+          h-full;
+      background: linear-gradient(180deg, rgba(48, 65, 153, 0.1) 0%, rgba(48, 65, 153, .6) 100%);
+  }
+  &--rounded {
+    border-radius: 10%;
+  }
+  &--zoom {
+      @apply overflow-hidden;
+    img{
+      transition: transform 1.2s, filter 1s ease-in-out;
+    }
+    &:hover {
+      img{
+        filter: brightness(110%);
+        transform: scale(1.2);
+      }
+    }
+  }
+  &--fit-right {
+    img {
+        @apply object-right;
+    }
+  }
+  &--fit-left {
+    img {
+        @apply object-left;
+    }
+  }
+}

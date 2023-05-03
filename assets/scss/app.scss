@@ -1,0 +1,41 @@
+/* ./resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-Garamond;
+    }
+}
+@import "components/components";
+@import "vendors/vendor";
+// :root {
+//     --swiper-pagination-color: #FFBD59;
+// }
+// .colorize-primary1 {
+//     &:hover {
+//         filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(1249%) hue-rotate(348deg) brightness(98%) contrast(89%);
+//     }
+
+// }
+// .container-booking {
+//     @apply md:pr-[316px];
+// }
+// .hover-image {
+//     @apply relative block;
+//     &:after {
+//         content: '';
+//         @apply absolute top-0 left-0 w-full h-full pointer-events-none opacity-0 z-1 transition duration-400;
+//         background: linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42))
+//     }
+//     &:hover {
+//         &:after {
+//             @apply opacity-100;
+//         }
+//     }
+// }
+
+// .hide-loading {
+//     display: none;
+// }

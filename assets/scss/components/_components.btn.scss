@@ -1,0 +1,30 @@
+.c-btn {
+    @apply inline-flex rounded-[8px] items-center justify-center font-bold text-16 gap-16 transition duration-300  px-24 h-[48px];
+    &--primary {
+        @apply text-textLight bg-secondary py-8;
+        &:hover {
+            @apply bg-secondaryLight;
+        }
+        &:focus {
+            @apply bg-secondaryDark;
+        }
+    }
+    &--secondary {
+        @apply border border-primary text-secondary py-8;
+        &:hover {
+            @apply bg-primary;
+        }
+        &:focus {
+            @apply bg-primaryDark;
+        }
+    }
+    &--cta {
+        @apply text-textLight bg-linkLight py-8;
+        &:hover {
+            @apply bg-linkExtraLight;
+        }
+        &:focus {
+            @apply bg-linkExtraDark;
+        }
+    }
+}

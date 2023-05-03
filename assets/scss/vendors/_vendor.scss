@@ -1,0 +1,34 @@
+$fa-font-path: '../fonts';
+//@import 'node_modules/@fortawesome/fontawesome-free/webfonts';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+[data-toggle-class] {
+    img, svg {
+        pointer-events: none;
+    }
+}
+.swiper-pagination {
+    &:not(.swiper-pagination-gallery)
+    {
+        bottom: -32px !important;
+    }
+    &.swiper-services-pagination,
+    &.swiper-rooms-pagination
+    {
+        bottom: 0 !important;
+    }
+    &.swiper-pagination-gallery {
+        text-align: right;
+    }
+    .swiper-pagination-bullet {
+        border:2px solid #283D5C;
+        background: transparent;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            background: #283D5C;
+        }
+    }
+}
