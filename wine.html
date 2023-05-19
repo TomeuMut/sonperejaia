@@ -11,6 +11,51 @@
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
+    <div class="c-header fixed w-full">
+        <div class="c-header__nav">
+            <div class="flex justify-evenly items-center container">                
+                <div data-toggle-class-item="menu" class="c-header__menu">
+                    <ul>
+                        <li><a class="is-active" href="/">Home</a></li>
+                        <li><a href="#">Finca</a></li>
+                        <li><a href="/galeria">Història</a></li>                        
+                    </ul>
+                    <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__close" href="#"> <img class="svg" src="{{'assets/images/icons/x.svg' | theme}}" /></a>
+                </div>
+                <a class="c-header__logo" href="#" class="">
+                    <img src="assets/images/logofull.svg" class="svg fill-black w-[200px]"  />
+                </a>
+                <div data-toggle-class-item="menu" class="c-header__menu">
+                    <ul>
+                        <li><a href="/habitacion">Vins</a></li>
+                        <li><a href="/entorno">Serveis</a></li>
+                        <li><a href="/servicios">Contacte</a></li>                        
+                    </ul>
+                </div>
+                <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__burguer-menu" href="#"><img class="w-32 svg" src="{{'assets/images/icons/burguer.svg' | theme}}" /></a>
+            </div>
+        </div>
+    </div>        
+    <section class="c-banner relative w-full h-[100vh]">        
+        <picture class="c-images c-images--background">
+            <img src="assets/images/banner.jpg">
+        </picture>        
+        <div class="container">
+            <div class="absolute c-banner__title">                
+                <div class="text-32 font-medium text-white">
+                    Tradició i Historia
+                </div>
+                <div class="text-64 font-medium text-white">
+                    Son Pere Jaia
+                </div>
+            </div>
+            <div class="absolute c-banner__title--bottom border-b-2 border-white">  
+                <div class="text-16 text-white uppercase">                
+                    Explora nuestra web
+                </div>              
+            </div>
+        </div>
+    </section>
     <section class="container py-56">
         <div class="flex items-center">
             <div class="w-1/2">

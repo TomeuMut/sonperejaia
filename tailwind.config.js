@@ -6,6 +6,7 @@ module.exports = {
         './pages/**/*.{html,js}',
         './index.html',        
         './wine.html',
+        './galeria.html',
     ],
     theme: {
         extend: {
@@ -168,7 +169,7 @@ module.exports = {
             center: true,
             padding: '16px',
             screens: {
-                '2xl': '1360px'
+                '2xl': '1612px'
             },
         },
         fontFamily: {
@@ -202,6 +203,7 @@ module.exports = {
             '112': '112px',
             '120': '120px',
             '128': '128px',
+            '298': '298px',
         },
         fontSize: {
             '8': '8px',

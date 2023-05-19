@@ -1,0 +1,88 @@
+.c-header {    
+    @apply top-0 z-[101];
+    opacity: 0;
+    &.stuck {
+        opacity: 1;
+        .c-header__top {
+            @apply py-8;
+        }
+        .c-header__nav {
+            @apply py-16 bg-white;
+        }
+    }
+    &:not(.stuck) {
+
+    }
+    &__top {
+        @apply  py-12 text-black transition duration-400;
+    }
+    &__nav {
+        @apply bg-transparent py-16 lg:py-32 transition duration-400;
+    }
+    &__language-current {
+        @apply flex items-center gap-6 text-16 text-black cursor-pointer;
+        path {
+           @apply stroke-textDarkBg;
+        }
+    }
+    &__language {
+        @apply relative;
+        &:not(.is-active) {
+            .c-header__language-list {
+                @apply opacity-0 pointer-events-none -z-10;
+            }
+        }
+    }
+    &__language-list {
+        @apply rounded-[8px] border absolute top-[calc(100%+8px)] left-0 -left-8 transition duration-500 shadow-xl bg-secondaryDark;
+        li {
+            a {
+                @apply block py-2 px-8;
+            }
+        }
+    }
+    &__menu {
+        @apply -lg:fixed -lg:top-0 -lg:left-0 -lg:h-full -lg:z-10 -lg:min-w-[200px] -lg:shadow-lg -lg:transition -lg:duration-700;
+        ul {
+            @apply flex items-center gap-32 -lg:flex-col -lg:p-32 -lg:items-start -lg:bg-secondary -lg:h-full;
+        }
+        &:after {
+            content: '';
+            @apply absolute left-0 top-0 w-full h-[100vh] -z-1 transition delay-500 pointer-events-none;
+            backdrop-filter: blur(8px);
+        }
+        a {
+            @apply text-black text-24 transition duration-300;
+            &.is-active {
+                @apply relative font-bold;
+                &:after {                    
+                    @apply absolute top-[calc(100%+8px)] left-0 leading-[0] text-24;
+                }
+            }
+            &:hover {
+                @apply text-primaryDark underline transition-all;
+            }
+        }
+        &:not(.is-active) {
+            @apply -lg:-translate-x-[100vw];
+            &:after {
+                @apply opacity-0 transition-none;
+            }
+        }
+    }
+    &__burguer-menu {
+        @apply lg:hidden mr-8;
+        path {
+            @apply stroke-primary;
+        }
+    }
+    &__close {
+        @apply absolute right-16 top-16 lg:hidden;
+        svg {
+            @apply w-[20px] h-[20px];
+            path {
+                @apply stroke-linkDark;
+            }
+        }
+    }
+}
