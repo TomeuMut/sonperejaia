@@ -1,9 +1,12 @@
-module.exports = {
-    mode: 'jit',
+module.exports = {    
     content: [
-        './pages/*.js',        
-        './components/**/*.{html,js}',
-        './pages/**/*.{html,js}',        
+        './pages/*.js',
+        './pages/*.vue',
+        './pages/*.htm',
+        './content/*.htm',
+        './partials/**/*.htm',
+        './layouts/*.htm',
+        './../../plugins/**/*.htm',       
     ],
     theme: {
         extend: {
@@ -242,7 +245,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-        require('@tailwindcss/line-clamp'),
-        require('@tailwindcss/line-clamp')
+        require('@tailwindcss/line-clamp'),        
     ]
 }
