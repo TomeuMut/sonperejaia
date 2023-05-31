@@ -11,7 +11,8 @@
     }
     &__title--bottom{
         top: 90%;
-        left: 45%;
+        left: 47%;
+        transform: translateX(-50%) rotate(90deg);
         &:hover{
             font-weight: bold;
             transition: 0.4s all ease;
