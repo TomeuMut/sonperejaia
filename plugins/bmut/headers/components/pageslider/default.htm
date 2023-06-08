@@ -1,0 +1,49 @@
+{% set pageSlider = __SELF__.pageSlider %}
+
+{% if pageSlider %}
+    {# <section class="c-slider">
+        <div class="c-slider__wrap js-slider">
+
+            {% for slide in pageSlider.slides %}
+            <div class="c-slider__item o-overlay-fixed">
+                <picture class="c-slider__picture">
+                    <img src="{{ slide.image.path }}" alt="{{ slide.title }}">
+                    <div class="c-slider__blur"></div>
+                </picture>
+                <div class="c-slider__outer">
+                        <div class="o-wrapper o-wrapper--xl">
+                            <div class="c-slider__text">
+                            <div class="o-layout u-flex-column">
+                                <div class="o-layout__item u-2/3@m">
+                                        <h2 class="c-slider__title">{{ slide.description|raw }}</h2>
+                                </div>
+                                <div class="o-layout__item u-1/3@m">
+                                    <div class="c-slider__subtitle">{{ slide.description2|raw }}</div>
+                                </div>
+                                <div class="o-layout__item u-mrt-xl">
+                                    <a class="c-btn--v1" href="{{ slide.button_link }}"
+                                        {% if slide.button_target %}target="_blank"{% endif %}>{{ slide.button_text }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </section> #}
+
+    <div class="c-slide c-slide--home">
+        <div class="js-slide">
+            {% for slide in pageSlider.slides %}
+                <div class="c-slide__item">
+                    <picture class="u-images u-images--fullheight">
+                        <img src="{{ slide.image.path }}" />
+                    </picture>
+                </div>
+            {% endfor %}
+        </div>
+        {% component 'SearchEngine' %}
+    </div>
+{% endif %}

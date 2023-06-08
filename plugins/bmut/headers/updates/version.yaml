@@ -1,0 +1,35 @@
+v1.0.1:
+    - 'Initialize plugin.'
+v1.0.2:
+    - 'Create table bmut_headers_page_headers'
+    - builder_table_create_bmut_headers_page_headers.php
+v1.0.3:
+    - 'Created table bmut_headers_breadcrumbs'
+    - builder_table_create_bmut_headers_breadcrumbs.php
+v1.0.4:
+    - 'Created table bmut_headers_sliders'
+    - builder_table_create_bmut_headers_sliders.php
+v1.0.5:
+    - 'Created table bmut_headers_slides'
+    - builder_table_create_bmut_headers_slides.php
+v1.0.6:
+    - 'Created table bmut_headers_slide_slider'
+    - builder_table_create_bmut_headers_slide_slider.php
+v1.0.7:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers.php
+v1.0.8:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers2.php
+v1.0.9:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers3.php
+v1.1.0:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers4.php
+v1.1.1:
+    - 'Updated table bmut_headers_slides'
+    - builder_table_update_bmut_headers_slides.php
+v1.1.2:
+    - 'Updated table bmut_headers_slides'
+    - builder_table_update_bmut_headers_slides_2.php

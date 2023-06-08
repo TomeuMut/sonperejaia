@@ -1,0 +1,10 @@
+<div class="c-banner u-position-relative">
+    <picture class="u-images u-images--background">
+        <img src="{{ header.image ? header.image.getThumb(1920,1080) : 'assets/images/header-home.jpg'|theme}}" alt="slide1">
+    </picture>
+    {% if header.title %}
+        <div class="c-banner__square">
+            <div class="c-banner__square--title u-color-shade-0">{{ header.title }} </div>
+        </div>
+    {% endif %}
+</div>

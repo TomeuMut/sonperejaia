@@ -1,0 +1,37 @@
+plugin:
+    name: 'bmut.headers::lang.plugin.name'
+    description: 'bmut.headers::lang.plugin.description'
+    author: 'Bmut'
+    icon: oc-icon-file-text-o
+    homepage: ''
+permissions:
+    bmut-headers-headers:
+        tab: 'bmut.headers::lang.permissions.headers_tab'
+        label: 'bmut.headers::lang.permissions.headers'
+    bmut-headers-breadcrumbs:
+        tab: 'bmut.headers::lang.permissions.headers_tab'
+        label: 'bmut.headers::lang.permissions.breadcrumbs'
+    bmut-headers-sliders:
+        tab: 'bmut.headers::lang.permissions.headers_tab'
+        label: 'bmut.headers::lang.permissions.sliders'
+navigation:
+    main-headers:
+        label: 'bmut.headers::lang.plugin.name'
+        url: /
+        icon: icon-image
+        permissions:
+            - bmut-headers-headers
+        order: '300'
+        sideMenu:
+            main-headers.sliders:
+                label: 'bmut.headers::lang.menu.sliders'
+                url: bmut/headers/sliders
+                icon: icon-slideshare
+            headers.slides:
+                label: 'bmut.headers::lang.tabs.slides'
+                url: bmut/headers/slides
+                icon: icon-th-large
+            main-headers.pageheaders:
+                label: 'bmut.headers::lang.plugin.description'
+                url: bmut/headers/pageheaders
+                icon: icon-image

@@ -1,0 +1,5 @@
+parentClass: Bmut\Headers\Models\Slider
+
+slides:
+    modelClass: Bmut\Headers\Models\Slide
+    pivot: true

@@ -1,0 +1,94 @@
+fields:
+    page:
+        label: 'bmut.headers::lang.fields.select_page'
+        span: auto
+        type: dropdown
+    image:
+        label: 'bmut.headers::lang.fields.image'
+        mode: image
+        imageWidth: '600'
+        imageHeight: '400'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    title:
+        label: 'bmut.headers::lang.fields.title'
+        span: full
+        type: text
+    subtitle:
+        label: 'bmut.headers::lang.fields.subtitle'
+        span: full
+        type: text
+        hidden: 1
+    description:
+        label: 'bmut.headers::lang.fields.description'
+        size: large
+        span: full
+        type: richeditor
+        hidden: 1
+    is_active:
+        label: 'bmut.headers::lang.fields.is_active'
+        span: full
+        type: switch
+    section:
+        label: 'First Section Info (optional)'
+        span: full
+        hidden: 1
+        type: section
+    section_title:
+        label: 'bmut.headers::lang.fields.title'
+        span: auto
+        hidden: 1
+        type: text
+    section_subtitle:
+        label: 'bmut.headers::lang.fields.subtitle'
+        span: auto
+        hidden: 1
+        type: text
+    section_description:
+        label: 'bmut.headers::lang.fields.description'
+        size: large
+        span: full
+        hidden: 1
+        type: richeditor
+    items:
+        label: 'Items'
+        prompt: 'Añadir nuevo item'
+        minItems: '1'
+        maxItems: '4'
+        style: default
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: 'bmut.headers::lang.fields.title'
+                    span: full
+                    type: text
+                link:
+                    label: Link
+                    span: full
+                    type: text
+        hidden: 1
+    buttons:
+        label: 'bmut.headers::lang.fields.button'
+        prompt: 'Añadir nuevo item'
+        minItems: '1'
+        maxItems: '1'
+        style: default
+        span: auto
+        type: repeater
+        form:
+            fields:
+                text:
+                    label: 'bmut.headers::lang.fields.text'
+                    span: full
+                    type: text
+                link:
+                    label: Link
+                    span: full
+                    type: text
+        hidden: 1

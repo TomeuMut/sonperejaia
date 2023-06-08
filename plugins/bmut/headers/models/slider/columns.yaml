@@ -1,0 +1,35 @@
+columns:
+    id:
+        label: 'bmut.headers::lang.columns.id'
+        type: number
+        invisible: true
+        sortable: true
+    title:
+        label: 'bmut.headers::lang.columns.title'
+        type: text
+        searchable: true
+        sortable: true
+    page:
+        label: 'bmut.headers::lang.columns.page'
+        type: text
+        searchable: true
+        sortable: true
+    is_active:
+        label: 'bmut.headers::lang.columns.is_active'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'bmut.headers::lang.columns.created_at'
+        type: datetime
+        invisible: true
+        sortable: true
+    updated_at:
+        label: 'bmut.headers::lang.columns.updated_at'
+        type: datetime
+        invisible: true
+        sortable: true
+    deleted_at:
+        label: 'bmut.headers::lang.columns.deleted_at'
+        type: datetime
+        invisible: true
+        sortable: true

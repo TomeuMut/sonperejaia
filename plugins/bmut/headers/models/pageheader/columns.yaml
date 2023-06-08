@@ -1,0 +1,21 @@
+columns:
+    page:
+        label: 'bmut.headers::lang.fields.page'
+        type: text
+        searchable: true
+        sortable: true
+    is_active:
+        label: 'bmut.headers::lang.fields.is_active'
+        type: switch
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'bmut.headers::lang.fields.created_at'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'bmut.headers::lang.fields.updated_at'
+        type: datetime
+        searchable: true
+        sortable: true

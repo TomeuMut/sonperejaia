@@ -1,0 +1,10 @@
+name: PageHeaders
+form: $/bmut/headers/models/pageheader/fields.yaml
+modelClass: Bmut\Headers\Models\PageHeader
+defaultRedirect: bmut/headers/pageheaders
+create:
+    redirect: 'bmut/headers/pageheaders/update/:id'
+    redirectClose: bmut/headers/pageheaders
+update:
+    redirect: bmut/headers/pageheaders
+    redirectClose: bmut/headers/pageheaders

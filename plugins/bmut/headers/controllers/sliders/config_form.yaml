@@ -1,0 +1,10 @@
+name: Sliders
+form: $/bmut/headers/models/slider/fields.yaml
+modelClass: Bmut\Headers\Models\Slider
+defaultRedirect: bmut/headers/sliders
+create:
+    redirect: 'bmut/headers/sliders/update/:id'
+    redirectClose: bmut/headers/sliders
+update:
+    redirect: bmut/headers/sliders
+    redirectClose: bmut/headers/sliders
