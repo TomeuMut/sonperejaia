@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: Nom
+        span: auto
+        type: text
+    description:
+        label: Descripció
+        size: ''
+        span: auto
+        type: richeditor
+    alcohol:
+        label: Alcohol
+        span: auto
+        type: number

@@ -1,0 +1,11 @@
+plugin:
+    name: 'bmut.sonperejaia::lang.plugin.name'
+    description: 'bmut.sonperejaia::lang.plugin.description'
+    author: Bmut
+    icon: oc-icon-bookmark
+    homepage: ''
+navigation:
+    wine:
+        label: Vi
+        url: bmut/sonperejaia/wines
+        icon: icon-leaf
