@@ -1,0 +1,10 @@
+name: DynamicSeos
+form: $/bmut/utils/models/dynamicseo/fields.yaml
+modelClass: Bmut\Utils\Models\DynamicSeo
+defaultRedirect: bmut/utils/dynamicseos
+create:
+    redirect: 'bmut/utils/dynamicseos/update/:id'
+    redirectClose: bmut/utils/dynamicseos
+update:
+    redirect: bmut/utils/dynamicseos
+    redirectClose: bmut/utils/dynamicseos

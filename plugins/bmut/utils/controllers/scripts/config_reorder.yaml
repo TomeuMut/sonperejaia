@@ -1,0 +1,4 @@
+title: Scripts
+modelClass: Bmut\Utils\Models\Script
+toolbar:
+    buttons: reorder_toolbar

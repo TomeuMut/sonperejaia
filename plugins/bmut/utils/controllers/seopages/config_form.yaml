@@ -1,0 +1,10 @@
+name: SeoPages
+form: $/bmut/utils/models/seo/fields.yaml
+modelClass: Bmut\Utils\Models\Seo
+defaultRedirect: bmut/utils/seopages
+create:
+    redirect: 'bmut/utils/seopages/update/:id'
+    redirectClose: bmut/utils/seopages
+update:
+    redirect: bmut/utils/seopages
+    redirectClose: bmut/utils/seopages

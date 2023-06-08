@@ -1,0 +1,23 @@
+{
+    "name": "bmut/utils",
+    "type": "october-plugin",
+    "extra": {
+        "installer-name": "utils"
+    },
+    "description": "Utils plugin for October CMS",
+    "homepage": "",
+    "keywords": ["october", "octobercms", "utils"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Bartomeu Mut",
+            "email": ""            
+        }        
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "rainlab/translate-plugin": "^1.9"
+    }
+}

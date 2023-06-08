@@ -1,0 +1,10 @@
+name: Sitemaps
+form: $/bmut/utils/models/sitemap/fields.yaml
+modelClass: Bmut\Utils\Models\Sitemap
+defaultRedirect: bmut/utils/sitemaps
+create:
+    redirect: 'bmut/utils/sitemaps/update/:id'
+    redirectClose: bmut/utils/sitemaps
+update:
+    redirect: bmut/utils/sitemaps
+    redirectClose: bmut/utils/sitemaps

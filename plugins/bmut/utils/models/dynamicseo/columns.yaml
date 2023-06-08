@@ -1,0 +1,11 @@
+columns:
+    title:
+        label: 'bmut.utils::lang.fields.title'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'bmut.utils::lang.fields.description'
+        type: text
+        searchable: true
+        sortable: true

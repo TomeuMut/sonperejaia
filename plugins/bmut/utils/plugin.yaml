@@ -1,0 +1,52 @@
+plugin:
+    name: 'bmut.utils::lang.plugin.name'
+    description: 'bmut.utils::lang.plugin.description'
+    author: 'Bmut'
+    icon: oc-icon-cloud
+    homepage: ''
+permissions:
+    manage_seo:
+        tab: 'bmut.utils::lang.permissions.utils'
+        label: 'bmut.utils::lang.permissions.seo'
+    manage_config:
+        tab: 'bmut.utils::lang.permissions.utils'
+        label: 'bmut.utils::lang.permissions.config'
+    manage_scripts:
+        tab: 'bmut.utils::lang.permissions.utils'
+        label: 'bmut.utils::lang.permissions.scripts'
+    manage_page_content:
+        tab: 'bmut.utils::lang.permissions.utils'
+        label: 'bmut.utils::lang.permissions.page'
+navigation:
+    main-seo:
+        label: 'bmut.utils::lang.menu.seo'
+        url: bmut/utils/seopages
+        icon: icon-line-chart
+        permissions:
+            - manage_seo
+        order: '300'
+        sideMenu:
+            inner-seo:
+                label: 'bmut.utils::lang.menu.seo'
+                url: bmut/utils/seopages
+                icon: icon-line-chart
+                permissions:
+                    - manage_seo
+            inner-sitemap:
+                label: 'bmut.utils::lang.menu.sitemap'
+                url: bmut/utils/sitemaps
+                icon: icon-sitemap
+                permissions:
+                    - manage_seo
+            inner-scripts:
+                label: 'bmut.utils::lang.menu.scripts'
+                url: bmut/utils/scripts
+                icon: icon-google
+                permissions:
+                    - manage_scripts
+            inner-settings:
+                label: 'bmut.utils::lang.menu.settings'
+                url: bmut/utils/settings/update
+                icon: icon-sliders
+                permissions:
+                    - manage_config
