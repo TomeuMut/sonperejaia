@@ -1,0 +1,10 @@
+name: Tags
+form: $/bmut/sonperejaia/models/tag/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Tag
+defaultRedirect: bmut/sonperejaia/tags
+create:
+    redirect: 'bmut/sonperejaia/tags/update/:id'
+    redirectClose: bmut/sonperejaia/tags
+update:
+    redirect: bmut/sonperejaia/tags
+    redirectClose: bmut/sonperejaia/tags
