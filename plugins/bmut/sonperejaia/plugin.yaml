@@ -9,3 +9,12 @@ navigation:
         label: Vi
         url: bmut/sonperejaia/wines
         icon: icon-leaf
+        iconSvg: ''
+    tags:
+        label: Etiquetes
+        url: bmut/sonperejaia/tags
+        icon: icon-tags
+    gallery:
+        label: Galeria
+        url: bmut/sonperejaia/galeries
+        icon: icon-file-image-o

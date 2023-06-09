@@ -20,6 +20,10 @@ class Wine extends Model
      */
     public $table = 'bmut_sonperejaia_wine';
 
+    public $attachOne = [
+        'img' => \System\Models\File::class
+    ];
+
     /**
      * @var array rules for validation.
      */

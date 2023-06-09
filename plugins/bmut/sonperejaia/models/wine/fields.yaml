@@ -3,12 +3,21 @@ fields:
         label: Nom
         span: auto
         type: text
-    description:
-        label: Descripció
-        size: ''
-        span: auto
-        type: richeditor
     alcohol:
         label: Alcohol
         span: auto
         type: number
+    img:
+        label: Imatge
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    description:
+        label: Descripció
+        size: huge
+        span: full
+        type: richeditor

@@ -1,4 +1,10 @@
 columns:
+    img:
+        label: 'imatge'
+        type: partial
+        path: $/bmut/sonperejaia/controllers/wines/_column_image.htm
+        searchable: false
+        sortable: false
     id:
         label: id
         type: number
