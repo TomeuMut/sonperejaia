@@ -18,3 +18,7 @@ navigation:
         label: Galeria
         url: bmut/sonperejaia/galeries
         icon: icon-file-image-o
+    contact:
+        label: Contact
+        url: bmut/sonperejaia/contacts
+        icon: icon-user

@@ -12,3 +12,6 @@ v1.0.4:
 v1.0.5:
     - 'Updated table bmut_sonperejaia_'
     - builder_table_update_bmut_sonperejaia_gallery.php
+v1.0.6:
+    - 'Created table bmut_sonperejaia_contact'
+    - builder_table_create_bmut_sonperejaia_contact.php

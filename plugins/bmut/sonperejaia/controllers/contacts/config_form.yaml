@@ -1,0 +1,10 @@
+name: Contacts
+form: $/bmut/sonperejaia/models/contact/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Contact
+defaultRedirect: bmut/sonperejaia/contacts
+create:
+    redirect: 'bmut/sonperejaia/contacts/update/:id'
+    redirectClose: bmut/sonperejaia/contacts
+update:
+    redirect: bmut/sonperejaia/contacts
+    redirectClose: bmut/sonperejaia/contacts
