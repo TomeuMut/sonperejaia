@@ -1,0 +1,15 @@
+<section class="container py-32 c-home-wine">
+    <div class="text-36 c-home-wine__title pb-48"> {{'Explora els nostres vins'|_}}</div>
+    <div class="grid grid-cols-2 gap-298 px-298">
+        {% for wine in wines %}
+            <div class="c-home-wine__square">
+                <a href="{{ 'wine'|page({slug: wine.slug}) }}">                
+                    <picture class="c-images c-images--130">
+                        <img class="c-home-wine__square--img" src="{{wine.img.getPath()}}">
+                    </picture>                
+                </a>
+                <div class="c-home-wine__square--title text-24 text-center">{{ wine.name }}</div>
+            </div>
+        {% endfor %}        
+    </div>        
+</section>
