@@ -1,0 +1,7 @@
+<div id="gallery" class="container flex flex-wrap gallery">
+    {% for gallery in galleries %}
+        <div class="gallery-item py-8 {{gallery.tags.slug}}">
+            <img class="c-images" src="{{gallery.img.getThumb('300','300','auto')}}" alt="">
+        </div>
+    {% endfor %}       
+</div>
