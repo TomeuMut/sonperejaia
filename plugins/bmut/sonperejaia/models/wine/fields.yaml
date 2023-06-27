@@ -3,10 +3,33 @@ fields:
         label: Nom
         span: auto
         type: text
+    slug:
+        label: URL
+        span: auto
+        type: text
+        preset:
+            field: name
+            type: slug
     alcohol:
         label: Alcohol
         span: auto
         type: number
+    type:
+        label: Tipus de Vi
+        span: auto
+        type: text        
+    type_grape:
+        label: Varietat del Raïm
+        span: auto
+        type: text            
+    capacity:
+        label: Capacitat de la Botella
+        span: auto
+        type: text            
+    color:
+        label: Color
+        span: auto
+        type: text    
     img:
         label: Imatge
         mode: image

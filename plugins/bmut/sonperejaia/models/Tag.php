@@ -8,6 +8,7 @@ use Model;
 class Tag extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\Sluggable;
 
     /**
      * @var bool timestamps are disabled.
@@ -19,6 +20,8 @@ class Tag extends Model
      * @var string table in the database used by the model.
      */
     public $table = 'bmut_sonperejaia_tags';
+    
+    protected $slugs = ['slug' => 'name'];
 
     /**
      * @var array rules for validation.

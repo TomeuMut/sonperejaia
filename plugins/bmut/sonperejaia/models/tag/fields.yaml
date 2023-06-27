@@ -1,5 +1,12 @@
 fields:
     name:
         label: 'Nombre de la Etiqueta'
-        span: full
+        span: auto
         type: text
+    slug:
+        label: Nombre slug
+        span: auto
+        type: text
+        preset:
+            field: name
+            type: slug

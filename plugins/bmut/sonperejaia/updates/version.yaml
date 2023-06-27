@@ -15,3 +15,15 @@ v1.0.5:
 v1.0.6:
     - 'Created table bmut_sonperejaia_contact'
     - builder_table_create_bmut_sonperejaia_contact.php
+v1.0.7:
+    - 'Updated table bmut_sonperejaia_wine'
+    - builder_table_update_bmut_sonperejaia_wine.php
+v1.0.8:
+    - 'Updated table bmut_sonperejaia_wine'
+    - builder_table_update_bmut_sonperejaia_wine_2.php
+v1.0.9:
+    - 'Updated table bmut_sonperejaia_wine'
+    - builder_table_update_bmut_sonperejaia_wine_3.php
+v1.0.10:
+    - 'Updated table bmut_sonperejaia_tags'
+    - builder_table_update_bmut_sonperejaia_tags.php
