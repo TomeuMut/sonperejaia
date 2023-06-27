@@ -1,0 +1,28 @@
+<section class="container py-56">
+    <div class="flex items-center">
+        <div class="w-1/2">
+            <picture>
+                <img class="rounded-md" src="{{wine.img.getPath()}}">
+            </picture>
+        </div>        
+        <div class="w-1/2 flex flex-col self-center justify-center px-48">
+            <div class="text-24">{{wine.type}}</div>
+            <div class="text-32">{{wine.name}}</div>
+            <div class="text-16"> {{wine.description|raw}}</div>                
+            <div class="flex justify-between py-20 mt-48 border-y-[1px] border-primary">
+                <div class="flex justify-center items-center">                        
+                    <img src="{{'assets/images/wine-glass-wine.svg'|theme}}" class="pr-6 w-56 h-56 svg fill-primary" alt="">
+                    {{wine.color}}
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="{{'assets/images/grapes.svg'|theme}}" class="pr-6 w-56 h-56 svg fill-primary" alt="">
+                    <div class="">{{wine.type_grape}}</div>
+                </div>                
+                <div class="flex justify-center items-center">
+                    <img src="{{'assets/images/wine-bottle.svg'|theme}}" class="pr-6 w-56 h-56 svg fill-primary" alt="">
+                    <div class="">{{wine.capacity}}</div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</section>   
