@@ -6,7 +6,7 @@ tags:
     view:
         list: $/bmut/sonperejaia/models/tag/columns.yaml
         form: $/bmut/sonperejaia/models/tag/fields.yaml
-        toolbarButtons: create|delete
+        toolbarButtons: create|add|delete
     manage:
         form: $/bmut/sonperejaia/models/tag/fields.yaml
         recordsPerPage: 10

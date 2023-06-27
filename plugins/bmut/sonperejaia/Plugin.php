@@ -1,5 +1,10 @@
 <?php namespace Bmut\SonPereJaia;
 
+use Bmut\Sonperejaia\Components\FormContact;
+use Bmut\Sonperejaia\Components\ListWines;
+use Bmut\Sonperejaia\Components\ListGallery;
+use Bmut\Sonperejaia\Components\ListTags;
+use Bmut\Sonperejaia\Components\InnerWine;
 use System\Classes\PluginBase;
 
 /**
@@ -10,8 +15,10 @@ class Plugin extends PluginBase
     /**
      * register method, called when the plugin is first registered.
      */
-    public function register()
+    public function register()  
     {
+
+      
     }
 
     /**
@@ -26,6 +33,13 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
+        return [
+            FormContact::class => 'FormContact',            
+            InnerWine::class => 'InnerWine',         
+            ListWines::class => 'ListWines',         
+            ListTags::class => 'ListTags',         
+            ListGallery::class => 'ListGallery',         
+        ];
     }
 
     /**

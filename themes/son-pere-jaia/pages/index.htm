@@ -3,6 +3,7 @@ title = "Home"
 url = "/"
 layout = "default"
 
+[ListWines]
 ==
 <section class="c-banner relative w-full h-[100vh]">        
     <picture class="c-images c-images--background">
@@ -88,24 +89,6 @@ layout = "default"
         </div>
     </div>
 </section>
-<section class="container py-32 c-home-wine">
-    <div class="text-36 c-home-wine__title pb-48"> Explora els nostres vins</div>
-    <div class="grid grid-cols-2 gap-298 px-298">
-        <div class="c-home-wine__square">
-            <a href="#">                
-                <picture class="c-images c-images--130">
-                    <img class="c-home-wine__square--img" src="{{'assets/images/botellapadrinsV2.jpg'|theme}}">
-                </picture>                
-            </a>
-            <div class="c-home-wine__square--title text-24 text-center">Padrins</div>
-        </div>
-        <div class="c-home-wine__square">
-            <a href="#">        
-                <picture class="c-images c-images--130">
-                    <img class="c-home-wine__square--img" src="{{'assets/images/botellapadrinsV2.jpg'|theme}}">
-                </picture>  
-            </a>
-            <div class="c-home-wine__square--title text-24 text-center">Padrins</div>
-        </div>            
-    </div>        
-</section>
+
+{% component 'ListWines' %}
+
