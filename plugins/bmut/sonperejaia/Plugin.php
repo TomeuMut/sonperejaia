@@ -1,6 +1,7 @@
 <?php namespace Bmut\SonPereJaia;
 
 use Bmut\Sonperejaia\Components\FormContact;
+use Bmut\Sonperejaia\Components\HomeBlocks;
 use Bmut\Sonperejaia\Components\ListWines;
 use Bmut\Sonperejaia\Components\ListGallery;
 use Bmut\Sonperejaia\Components\ListTags;
@@ -39,6 +40,7 @@ class Plugin extends PluginBase
             ListWines::class => 'ListWines',         
             ListTags::class => 'ListTags',         
             ListGallery::class => 'ListGallery',         
+            HomeBlocks::class => 'HomeBlocks',    
         ];
     }
 

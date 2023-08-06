@@ -5,20 +5,25 @@ plugin:
     icon: oc-icon-bookmark
     homepage: ''
 navigation:
+    home:
+        label: Home
+        url: bmut/sonperejaia/homes
+        icon: icon-home
     wine:
         label: Vi
         url: bmut/sonperejaia/wines
         icon: icon-leaf
         iconSvg: ''
-    tags:
-        label: Etiquetes
-        url: bmut/sonperejaia/tags
-        icon: icon-tags
     gallery:
         label: Galeria
         url: bmut/sonperejaia/galeries
-        icon: icon-file-image-o
+        icon: icon-file-image-o    
+    tags:
+        label: Etiquetes
+        url: bmut/sonperejaia/tags
+        icon: icon-tags   
     contact:
         label: Contact
         url: bmut/sonperejaia/contacts
         icon: icon-user
+

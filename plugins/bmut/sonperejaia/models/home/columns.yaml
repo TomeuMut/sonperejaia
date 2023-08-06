@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: id
+        type: number
+    block_one_title:
+        label: block_one_title
+        type: text
+    block_one_subtitle:
+        label: block_one_subtitle
+        type: text
+    block_one_description:
+        label: block_one_description
+        type: text
+    block_two_title:
+        label: block_two_title
+        type: text
+    block_three_title:
+        label: block_three_title
+        type: text
+    block_three_description:
+        label: block_three_description
+        type: text
+    block_three_title_2:
+        label: block_three_title_2
+        type: text
+    block_three_description_2:
+        label: block_three_description_2
+        type: text
+    block_four_title:
+        label: block_four_title
+        type: text
