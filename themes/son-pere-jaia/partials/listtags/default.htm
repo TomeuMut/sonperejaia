@@ -1,6 +1,6 @@
 <div class="container c-gallery__buttons flex justify-evenly text-20 py-20">
-        <button data-filter="all" class="w-auto p-8 mx-8 border border-primary rounded-md hover:bg-primary hover:text-white transition-all filter-button">{{'Totes'|_}}</button> 
+        <button data-filter="*" class="w-auto p-8 mx-8 border border-primary rounded-md hover:bg-primary hover:text-white transition-all filter-button-group">{{'Totes'|_}}</button> 
     {% for tag in tags %}
-        <button data-filter="{{tag.slug}}" class="w-auto p-8 mx-8 border border-primary rounded-md hover:bg-primary hover:text-white transition-all filter-button">{{tag.name}}</button> 
+        <button data-filter=".{{tag.slug}}" class="w-auto p-8 mx-8 border border-primary rounded-md hover:bg-primary hover:text-white transition-all filter-button-group">{{tag.name}}</button> 
     {% endfor %}        
 </div>
