@@ -2,93 +2,14 @@
 title = "Home"
 url = "/"
 layout = "default"
-
+[HomeBlocks]
 [ListWines]
-==
-<section class="c-banner relative w-full h-[100vh]">        
-    <picture class="c-images c-images--background">
-        <img src="{{'assets/images/banner.jpg'|theme}}">
-    </picture>        
-    <div class="container">
-        <div class="absolute c-banner__title">                
-            <div class="text-32 font-medium text-white">
-                Tradició i Historia
-            </div>
-            <div class="text-64 font-medium text-white">
-                Son Pere Jaia
-            </div>
-        </div>
-        <div class="absolute c-banner__title--bottom">  
-            <div class="text-16 text-white uppercase flex">                
-                Scroll
-                <img class="svg w-[24px]" src="{{'assets/images/scroll.svg'|theme}}" > 
-            </div>              
-        </div>
-    </div>
-</section>
-<section class="c-info py-28">
-    <div class="container">
-        <div class="c-info__subtitle text-32 flex flex-wrap items-center gap-48">
-             Tradició i Historia <span class="w-[140px] h-2 inline-block bg-primary"></span>
-            </div>
-        <div class="c-info__title text-48">Vins amb alma Mallorquina</div>
-        <div class="c-info__description flex py-20 gap-32">
-            <div class="c-info__description--img w-1/3">
-                <img src="{{'assets/images/logofull.svg'|theme}}" class="svg">
-            </div>
-            <div class="c-info__description--text w-2/3 text-24 flex self-center text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eveniet recusandae aperiam at nam doloribus veniam. Libero corporis ad, iusto molestias voluptatem, delectus itaque quod quidem deleniti commodi quis fugiat!
-            </div>
-        </div>
+[pageHeaderDetails]
 
-    </div>
-</section>
-<section class="c-hero relative w-full h-[600px]">
-    <picture class="c-images c-images--background">
-        <img src="{{'assets/images/img3.jpg'|theme}}">
-    </picture>  
-    <div class="container">
-        <div class="absolute c-hero__title text-white text-64">   
-            Tractam la terra com els nostres padrins
-        </div>
-    </div>
-</section>
-<section class="container flex">
-    <div class="w-1/2 text-center px-12 self-center ">
-        <div class="text-36 pb-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-        <div class="text-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet aliquid laborum molestias fugiat quos. At ipsam quos minima quibusdam. Ad quasi nemo nisi quas quae vel perspiciatis at sit!
-        </div>            
-    </div>
-    <div class="w-1/2">
-        <img class="w-full h-[500px]" src="https://source.unsplash.com/650x500/?grape">
-    </div>
-</section>
-<section class="container flex">
-    <div class="w-1/2">
-        <img class="w-full h-[500px]" src="https://source.unsplash.com/650x500/?grape">
-    </div>
-    <div class="w-1/2 text-center px-12 self-center ">
-        <div class="text-36 pb-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-        <div class="text-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet aliquid laborum molestias fugiat quos. At ipsam quos minima quibusdam. Ad quasi nemo nisi quas quae vel perspiciatis at sit!
-        </div>            
-    </div>        
-</section>
-<section class="c-hero relative w-full h-[600px]">
-    <picture class="c-images c-images--background">
-        <img src="https://source.unsplash.com/1920x600/?grape">
-    </picture>  
-    <div class="container">
-        <div class="absolute c-hero__title text-white text-64">   
-            Els nostres vins son el mirall de la feina ben feta
-        </div>
-    </div>
-</section>
+==
+{% component 'pageHeaderDetails' %}
+
+{% component 'HomeBlocks' %}
 
 {% component 'ListWines' %}
 
