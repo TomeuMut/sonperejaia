@@ -12,57 +12,36 @@ title = "Contact"
     <div class="container">
         <div class="text-center">
             <div class="text-64">
-                <h1>Contact</h1>
+                <h1>{{'Contacte'|_}}</h1>
             </div>
             <div class="text-32">
-                Contacti amb nosaltres
+                {{'Contacti amb nosaltres'|_}}
             </div>
         </div>
-        <div class="flex gap-28">        
-        <div class="w-1/2 text-24">
-            <div class="text-right py-28">
-                <div class="">
-                    Campos, Mallorca
+        <div class="flex gap-28 -lg:flex-col">        
+            <div class="w-1/2 text-24 -lg:w-full">
+                <div class="text-right py-28">
+                    <div class="">
+                        Campos, Mallorca
+                        <br>
+                        Illes Balears
+                    </div>
+                    <div class="">
+                        Carrer Manacor,26
                     <br>
-                    Illes Balears
-                </div>
-                <div class="">
-                    Carrer Manacor,26
-                <br>
-                    07630
-                </div>
-                <div class="">
-                    <a class="hover:underline" href="tel:+34669695858"> Tel: 669 695 858</a>
-                </div>
-                <div class="">
-                    <a class="hover:underline" href="mailto:Sonperejaia@gmail.com"> Mail: Sonperejaia@gmail.com</a>
+                        07630
+                    </div>
+                    <div class="">
+                        <a class="hover:underline" href="tel:+34669695858"> Tel: 669 695 858</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:underline" href="mailto:Sonperejaia@gmail.com"> Mail: Sonperejaia@gmail.com</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w-1/2 ">
-        {% component 'FormContact' %}
-            {# <form class="py-28 text-24" action="POST" data-request="onSaveContact" data-request-flash="">
-                <div class="py-6">
-                    <label for="name">Nombre y Apellidos* </label>
-                    <input class="w-full border-0 border-b-[1px] border-primary" type="text" name="name" id="name" placeholder="Introduce tu nombre y apellidos">
-                </div>
-                <div class="py-6">
-                    <label for="email">Correo electronico*</label>
-                    <input class="w-full border-0 border-b-[1px] border-primary" required="" type="text" id="email" name="email" placeholder="Introduce tu email*">
-                </div>
-                <div class="py-6">
-                    <label for="phone">Teléfono*</label>
-                    <input class="w-full border-0 border-b-[1px] border-primary" required="" type="text" name="phone" id="phone" placeholder="Introduce tu número de teléfono*">
-                </div>
-                <div class="py-6">
-                    <label for="text">Estoy interesando en</label>
-                    <textarea class="w-full h-[150px] border-0 border-b-[1px] border-primary" name="text" id="text" placeholder="Escribe tu comentarios o dudas"></textarea>
-                </div>
-                <div class="py-6">
-                    <input required="" type="checkbox"><a class="hover:text-primary transition-all" href="#"> Acepto la política de privacidad y protection de datos</a> </div>
-                <button class="border border-primary px-16 py-8 hover:bg-primary hover:text-white transition-all" type="submit">Enviar</button>
-            </form> #}
-        </div>
+            <div class="w-1/2 -lg:w-full">
+                {% component 'FormContact' %}           
+            </div>
         </div>
     </div>
 </section>

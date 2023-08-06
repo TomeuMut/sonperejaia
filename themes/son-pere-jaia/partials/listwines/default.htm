@@ -1,8 +1,8 @@
 <section class="container py-32 c-home-wine">
-    <div class="text-36 c-home-wine__title pb-48"> {{'Explora els nostres vins'|_}}</div>
-    <div class="grid grid-cols-2 gap-298 px-298">
+    <div class="text-36 c-home-wine__title pb-48"> {{'Explora els nostres vins'|_}}</div>   
+     <div class="flex gap-258 px-258 -lg:flex-col -xl:gap-56 -xl:px-156 -sm:px-72">
         {% for wine in wines %}
-            <div class="c-home-wine__square">
+            <div class="c-home-wine__square w-1/2 -lg:w-full">
                 <a href="{{ 'wine'|page({slug: wine.slug}) }}">                
                     <picture class="c-images c-images--130">
                         <img class="c-home-wine__square--img" src="{{wine.img.getPath()}}">
