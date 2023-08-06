@@ -1,3 +1,43 @@
+
+{% if this.page.baseFileName == 'index' %}
+<section class="c-banner relative w-full h-[100vh]">        
+
+    
+    {% if header.is_video %}
+    
+    <div class="c-images c-images--background">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{header.video}}?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        {# <img class="c-banner__loading" src="{{ 'assets/images/loading.gif'|theme }}" alt=""> #}
+    </div>
+
+    {% else %}
+
+    <picture class="c-images c-images--background">
+        <img src="{{ header.image ? header.image.thumb(1920, 1080) : 'assets/images/IMG_9369.jpg'|theme }}">
+    </picture>  
+
+    {% endif  %}
+
+    <div class="container">
+        <div class="absolute c-banner__title">                
+            <div class="text-32 font-medium text-white">
+                {{ header.title ? header.title : this.page.title }}
+            </div>
+            <div class="text-64 font-medium text-white">
+                {{'Son Pere Jaia'|_}}
+            </div>
+        </div>
+        <div class="absolute c-banner__title--bottom">  
+            <div class="text-16 text-white uppercase flex">                
+                Scroll
+                <img class="svg w-[24px]" src="{{'assets/images/scroll.svg'|theme}}" > 
+            </div>              
+        </div>
+    </div>
+</section>
+
+{% else %}
 <section class="c-banner relative w-full h-[50vh]">        
     <picture class="c-images c-images--background">
     {% if this.page.baseFileName == 'contacte' %}
@@ -14,3 +54,4 @@
         </div>            
     </div>
 </section>
+{% endif %}

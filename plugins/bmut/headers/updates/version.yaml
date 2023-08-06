@@ -33,3 +33,9 @@ v1.1.1:
 v1.1.2:
     - 'Updated table bmut_headers_slides'
     - builder_table_update_bmut_headers_slides_2.php
+v1.1.3:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers_2.php
+v1.1.4:
+    - 'Updated table bmut_headers_page_headers'
+    - builder_table_update_bmut_headers_page_headers_3.php

@@ -19,4 +19,13 @@
             cursor: pointer;
         }
     }
+    &__loading{
+        position: absolute;
+        width: auto!important;
+        height: auto!important;
+        top: 30%!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+        z-index: 1;
+    }
 }

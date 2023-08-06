@@ -31,8 +31,19 @@ fields:
         hidden: 1
     is_active:
         label: 'bmut.headers::lang.fields.is_active'
-        span: full
+        span: auto
         type: switch
+    is_video:
+        label: 'Es un video'
+        span: auto
+        type: switch
+    video:
+        label: 'Codi Vimeo del video'
+        span: auto
+        trigger:
+            action: show
+            field: is_video
+            condition: checked        
     section:
         label: 'First Section Info (optional)'
         span: full
@@ -55,13 +66,14 @@ fields:
         hidden: 1
         type: richeditor
     items:
-        label: 'Items'
+        label: Items
         prompt: 'Añadir nuevo item'
         minItems: '1'
         maxItems: '4'
         style: default
         span: auto
         type: repeater
+        hidden: 1
         form:
             fields:
                 title:
@@ -72,7 +84,6 @@ fields:
                     label: Link
                     span: full
                     type: text
-        hidden: 1
     buttons:
         label: 'bmut.headers::lang.fields.button'
         prompt: 'Añadir nuevo item'
@@ -81,6 +92,7 @@ fields:
         style: default
         span: auto
         type: repeater
+        hidden: 1
         form:
             fields:
                 text:
@@ -91,4 +103,3 @@ fields:
                     label: Link
                     span: full
                     type: text
-        hidden: 1
