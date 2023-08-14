@@ -2,7 +2,7 @@
 description = "Default layout"
 ==
 <!DOCTYPE html>
-<html>    
+<html lang="{{ this.site.locale }}">    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +59,7 @@ description = "Default layout"
         <script src="{{'assets/js/gdpr-cookies.js'|theme}}"></script>       
         <script type="text/javascript">
         gdprCookieNotice({
-            locale: 'ca', // Idioma del aviso de cookies, default: es                
+            locale: '{{this.site.locale}}', // Idioma del aviso de cookies, default: es                
             timeout: 500, // Delay para que aparezca el aviso default: 500
             expiration: 30, // expiración de la cookie, default: 30
             domain: '.sonperejaia.com', // SIN ESTO NO FUNCIONA Dominio del aviso de cookies (tiene que empezar con ., por ejemplo .refineriaweb.com
