@@ -1,0 +1,30 @@
+fields:
+    page:
+        label: 'bmut.utils::lang.fields.page'
+        span: auto
+        type: dropdown
+    parentPage:
+        label: 'bmut.utils::lang.fields.parent_page'
+        nameFrom: page
+        descriptionFrom: description
+        emptyOption: '-- Selecciona página padre --'
+        span: auto
+        type: relation
+    breadcrumb:
+        label: 'bmut.utils::lang.fields.title'
+        span: auto
+        type: text
+    type:
+        label: 'bmut.headers::lang.fields.type'
+        span: auto
+        emptyOption: 'bmut.utils::lang.options.select_type'
+        type: dropdown
+    dom_element:
+        label: 'bmut.utils::lang.fields.dom_element'
+        span: auto
+        type: text
+        comment: 'bmut.utils::lang.comments.dom_element'
+    is_active:
+        label: 'bmut.utils::lang.fields.is_active'
+        span: full
+        type: switch

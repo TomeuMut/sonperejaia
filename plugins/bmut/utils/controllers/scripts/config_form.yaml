@@ -1,0 +1,10 @@
+name: Scripts
+form: $/bmut/utils/models/script/fields.yaml
+modelClass: Bmut\Utils\Models\Script
+defaultRedirect: bmut/utils/scripts
+create:
+    redirect: 'bmut/utils/scripts/update/:id'
+    redirectClose: bmut/utils/scripts
+update:
+    redirect: bmut/utils/scripts
+    redirectClose: bmut/utils/scripts

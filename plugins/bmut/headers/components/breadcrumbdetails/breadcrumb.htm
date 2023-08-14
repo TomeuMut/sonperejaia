@@ -1,0 +1,7 @@
+{% if item.parent %}
+    {% partial __SELF__ ~ '::' ~ 'breadcrumb' item=item.parent %}
+{% endif %}
+
+<li class="c-breadcrumbs__item">
+    <a href="{{item.page|page}}" class="c-breadcrumbs__link {% if item.dom_element %}js-breadcrumb-link {% endif %}" data-rw-dom-element="{{item.dom_element}}">{{item.breadcrumb}}</a>
+</li>

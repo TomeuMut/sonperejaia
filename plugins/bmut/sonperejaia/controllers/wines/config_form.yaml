@@ -1,0 +1,10 @@
+name: Wines
+form: $/bmut/sonperejaia/models/wine/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Wine
+defaultRedirect: bmut/sonperejaia/wines
+create:
+    redirect: 'bmut/sonperejaia/wines/update/:id'
+    redirectClose: bmut/sonperejaia/wines
+update:
+    redirect: bmut/sonperejaia/wines
+    redirectClose: bmut/sonperejaia/wines

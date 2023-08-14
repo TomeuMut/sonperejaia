@@ -1,0 +1,17 @@
+<?php
+    $imageWidth = 100;
+    $imageHeight = 100;
+
+    $thumb = null;
+    if ($value) {
+        $thumb = $value->getThumb($imageWidth, $imageHeight, 'crop');
+    }
+
+    if (!isset($record)) {
+        $record = $value;
+    }
+?>
+
+<div style="position: relative;">
+    <img class="img-circle" src="<?=$thumb ?>" style="border-radius: 50px;" width="<?=$imageWidth ?>" height="<?=$imageHeight ?>">
+</div>

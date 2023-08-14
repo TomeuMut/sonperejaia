@@ -1,0 +1,12 @@
+slides:
+    label: 'bmut.headers::lang.fields.slides'
+    view:
+        list: $/bmut/headers/models/slide/columns.yaml
+        form: $/bmut/headers/models/slide/fields.yaml
+        toolbarButtons: link|unlink|create|delete
+        showCheckboxes: true
+    manage:
+        form: $/bmut/headers/models/slide/fields.yaml
+        recordsPerPage: 10
+    pivot:
+        form: $/bmut/headers/models/slide/pivot_fields.yaml

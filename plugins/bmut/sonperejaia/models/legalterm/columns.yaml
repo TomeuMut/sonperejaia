@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    legal_terms:
+        label: legal_terms
+        type: text
+    policy_privacity:
+        label: policy_privacity
+        type: text
+    policy_cookies:
+        label: policy_cookies
+        type: text

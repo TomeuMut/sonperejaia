@@ -1,0 +1,57 @@
+
+{% if this.page.baseFileName == 'index' %}
+<section class="c-banner relative w-full -md:h-[40vh] -lg:h-[60vh] -xl:h-[60vh] h-[100vh]">        
+
+    
+    {% if header.is_video %}
+    
+    <div class="c-images c-images--background">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{header.video}}?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        {# <img class="c-banner__loading" src="{{ 'assets/images/loading.gif'|theme }}" alt=""> #}
+    </div>
+
+    {% else %}
+
+    <picture class="c-images c-images--background">
+        <img src="{{ header.image ? header.image.thumb(1920, 1080) : 'assets/images/IMG_9369.jpg'|theme }}">
+    </picture>  
+
+    {% endif  %}
+
+    <div class="container">
+        <div class="absolute c-banner__title">                
+            <div class="text-32 font-medium text-white">
+                {{ header.title ? header.title : this.page.title }}
+            </div>
+            <div class="text-64 font-medium text-white">
+                {{'Son Pere Jaia'|_}}
+            </div>
+        </div>
+        <div class="absolute c-banner__title--bottom">  
+            <div class="text-16 text-white uppercase flex">                
+                Scroll
+                <img class="svg w-[24px]" src="{{'assets/images/scroll.svg'|theme}}" > 
+            </div>              
+        </div>
+    </div>
+</section>
+
+{% else %}
+<section class="c-banner relative w-full h-[50vh]">        
+    <picture class="c-images c-images--background">
+    {% if this.page.baseFileName == 'contacte' %}
+                <iframe class="h-[50vh]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.532850245173!2d3.011653876477324!3d39.434686914822635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297ae08e3a5d9b5%3A0xce885c0a4890d210!2sCarrer%20de%20Manacor%2C%2026%2C%2007630%20Campos%2C%20Illes%20Balears!5e0!3m2!1sca!2ses!4v1685560311704!5m2!1sca!2ses" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        {% else %}
+                <img src="{{ header.image ? header.image.thumb(1920, 1080) : 'assets/images/IMG_9369.jpg'|theme }}">
+        {% endif %}
+    </picture>        
+    <div class="container">
+        <div class="absolute c-banner__title--inner">                
+            <div class="text-64 font-medium text-white">
+                {{ header.title ? header.title : this.page.title }}
+            </div>
+        </div>            
+    </div>
+</section>
+{% endif %}

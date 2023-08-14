@@ -1,0 +1,10 @@
+name: Slides
+form: $/bmut/headers/models/slide/fields.yaml
+modelClass: Bmut\Headers\Models\Slide
+defaultRedirect: bmut/headers/slides
+create:
+    redirect: 'bmut/headers/slides/update/:id'
+    redirectClose: bmut/headers/slides
+update:
+    redirect: bmut/headers/slides
+    redirectClose: bmut/headers/slides

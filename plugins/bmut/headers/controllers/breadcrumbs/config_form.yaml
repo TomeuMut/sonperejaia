@@ -1,0 +1,10 @@
+name: Breadcrumbs
+form: $/bmut/headers/models/breadcrumb/fields.yaml
+modelClass: Bmut\Headers\Models\Breadcrumb
+defaultRedirect: bmut/headers/breadcrumbs
+create:
+    redirect: 'bmut/headers/breadcrumbs/update/:id'
+    redirectClose: bmut/headers/breadcrumbs
+update:
+    redirect: bmut/headers/breadcrumbs
+    redirectClose: bmut/headers/breadcrumbs

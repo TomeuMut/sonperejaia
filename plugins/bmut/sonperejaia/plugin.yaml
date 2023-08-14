@@ -1,0 +1,32 @@
+plugin:
+    name: 'bmut.sonperejaia::lang.plugin.name'
+    description: 'bmut.sonperejaia::lang.plugin.description'
+    author: Bmut
+    icon: oc-icon-bookmark
+    homepage: ''
+navigation:
+    home:
+        label: Home
+        url: bmut/sonperejaia/homes
+        icon: icon-home
+    wine:
+        label: Vi
+        url: bmut/sonperejaia/wines
+        icon: icon-leaf
+        iconSvg: ''
+    gallery:
+        label: Galeria
+        url: bmut/sonperejaia/galeries
+        icon: icon-file-image-o
+    tags:
+        label: Etiquetes
+        url: bmut/sonperejaia/tags
+        icon: icon-tags
+    contact:
+        label: Contact
+        url: bmut/sonperejaia/contacts
+        icon: icon-user
+    main-menu-item:
+        label: 'Textos Legals'
+        url: bmut/sonperejaia/legalterms
+        icon: icon-legal

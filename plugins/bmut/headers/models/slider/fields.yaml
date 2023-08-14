@@ -1,0 +1,18 @@
+fields:
+    title:
+        label: 'bmut.headers::lang.fields.title'
+        span: auto
+        type: text
+    is_active:
+        label: 'bmut.headers::lang.fields.is_active'
+        span: auto
+        type: switch
+    page:
+        label: 'bmut.headers::lang.fields.page'
+        span: auto
+        type: dropdown
+    slides:
+        label: 'Slides'
+        span: full
+        path: field_slides
+        type: partial

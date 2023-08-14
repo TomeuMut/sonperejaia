@@ -1,6 +1,6 @@
 <footer class="c-footer bg-primary/60">
-    <div class="container grid grid-cols-3 py-24">
-        <div class="c-footer__direction text-white text-24 flex flex-col justify-center">
+    <div class="container grid grid-cols-3 py-24 -lg:grid-cols-1">
+        <div class="c-footer__direction text-white text-24 flex flex-col justify-center -lg:text-center">
             <div>C/Manacor,26 <br>Campos 07630</div>
             <div class="">
                 <a class="hover:underline" href="tel:+34669695858"> Tel: 669 695 858</a>
@@ -17,31 +17,31 @@
             
         </div> -->
         <div class="c-footer__pages text-24 text-white text-center  flex flex-col justify-center">
-            <div> <a href="" class="hover:underline"> Home</a></div>
-            <div> <a href="" class="hover:underline"> Servicios</a></div>
-            <div> <a href="" class="hover:underline"> Contacto</a></div>
-            <div> <a href="" class="hover:underline"> Vino</a></div>
-            <div> <a href="" class="hover:underline"> Galeria</a></div>
+            <div> <a href="{{'index'|page}}" class="hover:underline"> {{'Home'|_}}</a></div>
+            {# <div> <a href="" class="hover:underline"> Servicios</a></div> #}
+            <div> <a href="{{'contacte'|page}}" class="hover:underline"> {{'Contacte'|_}}</a></div>
+            <div> <a href="{{'galeria'|page}}" class="hover:underline"> {{'Galeria'|_}}</a></div>
+            {# <div> <a href="" class="hover:underline"> Galeria</a></div> #}
         </div>
     </div>
 </footer>
-<div class="container flex py-16 text-18 justify-between">
-    <div class="flex">
+<div class="container flex py-16 text-18 justify-between -lg:flex-col">
+    <div class="flex flex-wrap">
         <div>
             © 2023 Son Pere Jaia
         </div>
         &nbsp; -- &nbsp; | &nbsp;
-        <a href="#" class="hover:underline transition-all hover:bold">Avis Legal</a>
+        <a href="{{'avis-legal'|page}}" class="hover:underline transition-all hover:bold">{{'Avis Legal'|_}}</a>
         &nbsp; | &nbsp;
-        <a href="#" class="hover:underline transition-all hover:bold">Política de Privacitat</a>
+        <a href="{{'politica-de-privacitat'|page}}" class="hover:underline transition-all hover:bold">{{'Política de Privacitat'|_}}</a>
         &nbsp; | &nbsp;
-        <a href="#" class="hover:underline transition-all hover:bold">Política de Cookies</a>    
+        <a href="{{'politica-de-cookies'|page}}" class="hover:underline transition-all hover:bold">{{'Política de Cookies'|_}}</a>    
     </div>
     <div class="flex">
-        <a href="#" class="mr-24">
+        <a href="https://www.facebook.com/profile.php?id=100072337152327" target="_blank" class="mr-24">
             <img src="{{'assets/images/facebook.svg'|theme}}"  class="w-[20px] h-[20px] svg fill-black hover:fill-primary transition-all"  alt="Facebook">
         </a>
-        <a href="#" class="mr-24">
+        <a href="https://www.instagram.com/sonperejaia/" target="_blank" class="mr-24">
             <img src="{{'assets/images/instagram.svg'|theme}}"  class="w-[20px] h-[20px] svg fill-black hover:fill-primary transition-all"  alt="Instagram">
         </a>
     </div>        

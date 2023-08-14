@@ -1,25 +1,36 @@
 <div class="c-header fixed w-full">
     <div class="c-header__nav">
         <div class="flex justify-evenly items-center container">                
-            <div data-toggle-class-item="menu" class="c-header__menu">
+            <div data-toggle-class-item="menu" class="c-header__menu -lg:hidden">
                 <ul>
-                    <li><a class="is-active" href="/">Home</a></li>
-                    <li><a href="#">Finca</a></li>
-                    <li><a href="/galeria">Història</a></li>                        
+                    <li><a class="{% if this.page.title == 'Home' %} is-active{% endif %}" href="{{'index'|page}}">{{'Home'|_}}</a></li>
+                    {# <li><a href="#">Finca</a></li> #}
+                    <li><a class="{% if this.page.title == 'Galeria' %} is-active{% endif %}" href="{{'galeria'|page}}">{{'Galeria'|_}}</a></li>                        
                 </ul>
-                <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__close" href="#"> <img class="svg" src="{{'assets/images/icons/x.svg' | theme}}" /></a>
+                <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__close" href="#"> 
+                    <svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.5px" height="34.5px" viewBox="14.75 14.75 34.5 34.5" enable-background="new 14.75 14.75 34.5 34.5" xml:space="preserve" class="svg replaced-svg">
+                        <path fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M48,16L16,48"></path>
+                        <path fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M16,16l32,32"></path>
+                    </svg>
+                </a>
             </div>
             <a class="c-header__logo" href="#" class="">
                 <img src="{{'assets/images/logofull.svg'|theme}}" class="svg fill-black w-[200px]"  />
             </a>
             <div data-toggle-class-item="menu" class="c-header__menu">
                 <ul>
-                    <li><a href="/habitacion">Vins</a></li>
-                    <li><a href="/entorno">Serveis</a></li>
-                    <li><a href="/servicios">Contacte</a></li>                        
+                    <li class="lg:hidden" ><a class="is-active" href="{{'index'|page}}">{{'Home'|_}}</a></li>
+                    <li class="lg:hidden" ><a href="{{'galeria'|page}}">{{'Galeria'|_}}</a></li>        
+                    <li><a class="{% if this.page.title == 'Contact' %} is-active{% endif %}" href="{{'contacte'|page}}">{{'Contacte'|_}}</a></li>                        
                 </ul>
             </div>
-            <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__burguer-menu" href="#"><img class="w-32 svg" src="{{'assets/images/icons/burguer.svg' | theme}}" /></a>
+            <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__burguer-menu" href="#">
+
+            <svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50.5px" height="29.167px" viewBox="0.75 0.417 50.5 29.167" enable-background="new 0.75 0.417 50.5 29.167" xml:space="preserve" class="w-32 svg replaced-svg">
+                <path fill="none" stroke="#24272A" stroke-width="2.5" stroke-linecap="round" d="M2,1.667h48 M2,15h48 M2,28.334h48"></path>
+            </svg>
+
+            </a>
         </div>
     </div>
 </div> 

@@ -44,7 +44,7 @@
     &__menu {
         @apply -lg:fixed -lg:top-0 -lg:left-0 -lg:h-full -lg:z-10 -lg:min-w-[200px] -lg:shadow-lg -lg:transition -lg:duration-700;
         ul {
-            @apply flex items-center gap-32 -lg:flex-col -lg:p-32 -lg:items-start -lg:bg-secondary -lg:h-full;
+            @apply flex items-center gap-32 -lg:flex-col -lg:p-32 -lg:items-start -lg:bg-white -lg:border-l-primary -lg:h-full;
         }
         &:after {
             content: '';
@@ -81,7 +81,7 @@
         svg {
             @apply w-[20px] h-[20px];
             path {
-                @apply stroke-linkDark;
+                @apply stroke-primary;
             }
         }
     }

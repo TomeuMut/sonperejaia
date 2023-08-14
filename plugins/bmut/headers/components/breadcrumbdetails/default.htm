@@ -1,0 +1,8 @@
+{% set breadCrumbs = __SELF__.breadCrumbs %}
+<div class="c-breadcrumbs u-mrb-xxxxl">
+    <ul>
+        {% if breadCrumbs %}
+            {% partial __SELF__ ~ '::' ~ 'breadcrumb' item=breadCrumbs %}
+        {% endif %}
+    </ul>
+</div>

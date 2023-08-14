@@ -1,0 +1,10 @@
+name: Galeries
+form: $/bmut/sonperejaia/models/gallery/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Gallery
+defaultRedirect: bmut/sonperejaia/galeries
+create:
+    redirect: 'bmut/sonperejaia/galeries/update/:id'
+    redirectClose: bmut/sonperejaia/galeries
+update:
+    redirect: bmut/sonperejaia/galeries
+    redirectClose: bmut/sonperejaia/galeries

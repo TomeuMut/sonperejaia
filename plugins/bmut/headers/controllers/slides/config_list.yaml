@@ -1,0 +1,13 @@
+list: $/bmut/headers/models/slide/columns.yaml
+modelClass: Bmut\Headers\Models\Slide
+title: Slides
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+recordUrl: 'bmut/headers/slides/update/:id'
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+

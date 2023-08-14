@@ -1,0 +1,10 @@
+bmutSeo:
+    label: 'Seo'
+    deferredBinding: false
+    manage:
+        form: $/bmut/utils/models/dynamicseo/fields.yaml
+    view:
+        list: $/bmut/utils/models/dynamicseo/columns.yaml
+        form: $/bmut/utils/models/dynamicseo/fields.yaml
+        toolbarButtons: update|delete
+        showCheckboxes: true

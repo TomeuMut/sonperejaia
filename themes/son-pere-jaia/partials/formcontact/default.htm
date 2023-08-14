@@ -1,0 +1,21 @@
+<form class="py-28 text-24" action="POST" data-request="onSend" data-request-flash="">
+    <div class="py-6">
+        <label for="name">{{'Nombre y Apellidos*'|_}} </label>
+        <input class="w-full border-0 border-b-[1px] border-primary" type="text" name="name" id="name" placeholder="Introduce tu nombre y apellidos">
+    </div>
+    <div class="py-6">
+        <label for="email">{{'Correo electronico*'|_}}</label>
+        <input class="w-full border-0 border-b-[1px] border-primary" required="" type="text" id="email" name="email" placeholder="Introduce tu email*">
+    </div>
+    <div class="py-6">
+        <label for="phone">{{'Teléfono*'|_}}</label>
+        <input class="w-full border-0 border-b-[1px] border-primary" required="" type="text" name="phone" id="phone" placeholder="Introduce tu número de teléfono*">
+    </div>
+    <div class="py-6">
+        <label for="text">{{'Estoy interesando en'|_}}</label>
+        <textarea class="w-full h-[150px] border-0 border-b-[1px] border-primary" name="text" id="text" placeholder="Escribe tu comentarios o dudas"></textarea>
+    </div>
+    <div class="py-6">
+        <input required="" type="checkbox"><a class="hover:text-primary transition-all" href="#">{{' Acepto la política de privacidad y protection de datos'|_}}</a> </div>
+    <button class="border border-primary px-16 py-8 hover:bg-primary hover:text-white transition-all" type="submit">{{'Enviar'|_}}</button>
+</form>

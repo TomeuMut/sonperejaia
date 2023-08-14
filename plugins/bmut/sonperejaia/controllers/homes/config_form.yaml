@@ -1,0 +1,10 @@
+name: Homes
+form: $/bmut/sonperejaia/models/home/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Home
+defaultRedirect: bmut/sonperejaia/homes
+create:
+    redirect: 'bmut/sonperejaia/homes/update/:id'
+    redirectClose: bmut/sonperejaia/homes
+update:
+    redirect: bmut/sonperejaia/homes
+    redirectClose: bmut/sonperejaia/homes

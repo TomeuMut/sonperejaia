@@ -1,0 +1,10 @@
+name: LegalTerms
+form: $/bmut/sonperejaia/models/legalterm/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\LegalTerm
+defaultRedirect: bmut/sonperejaia/legalterms
+create:
+    redirect: 'bmut/sonperejaia/legalterms/update/:id'
+    redirectClose: bmut/sonperejaia/legalterms
+update:
+    redirect: bmut/sonperejaia/legalterms
+    redirectClose: bmut/sonperejaia/legalterms

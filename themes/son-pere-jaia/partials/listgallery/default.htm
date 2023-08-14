@@ -1,0 +1,13 @@
+<div id="gallery" class="container flex flex-wrap gallery">
+    {% for gallery in galleries %}
+    <div class="gallery-item p-16 hover:opacity-50 transition hover:cursor-pointer w-1/4 {{gallery.tags.slug}} -lg:w-11/12">    
+        <div class="relative">
+            <picture class="c-images c-images--70 c-images--zoom">            
+                <a href="{{gallery.img.getPath()}}" data-lightbox="gallery">
+                    <img src="{{gallery.img.getThumb('500','500','crop')}}" alt="">
+                </a>
+            </picture>
+        </div>
+    </div>
+    {% endfor %}       
+</div>

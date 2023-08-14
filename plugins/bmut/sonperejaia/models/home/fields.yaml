@@ -1,0 +1,90 @@
+tabs:
+    fields:
+        block_one_title:
+            label: 'Titol Bloc 1'
+            span: auto
+            type: text
+            tab: 'Bloc 1'
+        block_one_subtitle:
+            label: 'Subtitol Bloc 1'
+            span: auto
+            type: text
+            tab: 'Bloc 1'
+        block_one_description:
+            label: 'Descripció Bloc 1'
+            size: large
+            span: full
+            type: textarea
+            tab: 'Bloc 1'
+        block_two_title:
+            label: 'Titol Bloc 2'
+            span: auto
+            type: text
+            tab: 'Bloc 2'
+        block_two_img:
+            label: 'Imatge Bloc 2'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Bloc 2'
+        block_three_title:
+            label: 'Titol 1 Bloc 3'
+            span: auto
+            type: text
+            tab: 'Bloc 3'
+        block_three_img_one:
+            label: 'Imatge 1 Bloc 3'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Bloc 3'
+        block_three_description:
+            label: 'Descripció 1 Bloc 3'
+            size: large
+            span: full
+            type: textarea
+            tab: 'Bloc 3'
+        block_three_title_2:
+            label: 'Titol 2 Bloc 3'
+            span: auto
+            type: text
+            tab: 'Bloc 3'
+        block_three_img_two:
+            label: 'Imatge 2 Bloc 3'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Bloc 3'
+        block_three_description_2:
+            label: 'Descripció 2 Bloc 3'
+            size: large
+            span: full
+            type: textarea
+            tab: 'Bloc 3'
+        block_four_title:
+            label: 'Titol Bloc 4'
+            span: auto
+            type: text
+            tab: 'Bloc 4'
+        block_four_img:
+            label: 'Imatge Bloc 4'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Bloc 4'

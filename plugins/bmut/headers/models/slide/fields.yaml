@@ -1,0 +1,39 @@
+fields:
+    title:
+        label: 'bmut.headers::lang.fields.title'
+        span: auto
+        type: text
+    subtitle:
+        label: 'bmut.headers::lang.fields.subtitle'
+        span: auto
+        type: text
+    is_active:
+        label: 'bmut.headers::lang.fields.is_active'
+        span: auto
+        type: switch
+    image:
+        label: 'bmut.headers::lang.fields.image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    buttons:
+        label: 'bmut.headers::lang.fields.buttons'
+        type: repeater
+        maxItems: 1
+        minItems: 1
+        form:
+            fields:
+                text:
+                    label: Text
+                    type: text
+                link:
+                    label: Link
+                    type: text
+    description:
+        label: 'bmut.headers::lang.fields.description'
+        span: full
+        type: richeditor

@@ -1,0 +1,24 @@
+{
+    "name": "bmut/headers",
+    "type": "october-plugin",
+    "extra": {
+        "installer-name": "headers"
+    },
+    "description": "Header plugin for October CMS",
+    "homepage": "",
+    "keywords": ["october", "octobercms", "headers"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bartomeu Mut",
+            "email": ""            
+        }        
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "rainlab/translate-plugin": "dev-master"
+    }
+}

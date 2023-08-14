@@ -3,19 +3,47 @@
         top: 35%;
         left: 40%;
         text-align: center;
+        @media only screen and (max-width: 769px) {            
+            top: 25%;
+            left: 25%;
+        }
+        @media only screen and (max-width: 430px) {        
+            top: 5%;
+            left: 10%;
+        }
     }
     &__title--inner{
         top: 35%;
         left: 45%;
         text-align: center;
+        @media only screen and (max-width: 769px) {     
+            left: 35%;
+        }
     }
     &__title--bottom{
         top: 90%;
-        left: 45%;
+        left: 47%;
+        transform: translateX(-50%) rotate(90deg);
         &:hover{
             font-weight: bold;
             transition: 0.4s all ease;
             cursor: pointer;
         }
+        @media only screen and (max-width: 769px) {            
+            top: 65%;
+        }
+        @media only screen and (max-width: 430px) {            
+            top: 54%;
+        }
+
+    }
+    &__loading{
+        position: absolute;
+        width: auto!important;
+        height: auto!important;
+        top: 30%!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+        z-index: 1;
     }
 }

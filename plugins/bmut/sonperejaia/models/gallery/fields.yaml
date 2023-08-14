@@ -1,0 +1,20 @@
+fields:
+    img:
+        label: Imatge
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    sort_order:
+        label: Ordre
+        span: auto
+        type: number
+    tags:
+        label: Etiquetas
+        type: relation
+        path: field_tags
+        span: auto
+    
