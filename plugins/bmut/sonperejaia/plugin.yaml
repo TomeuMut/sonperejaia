@@ -17,13 +17,16 @@ navigation:
     gallery:
         label: Galeria
         url: bmut/sonperejaia/galeries
-        icon: icon-file-image-o    
+        icon: icon-file-image-o
     tags:
         label: Etiquetes
         url: bmut/sonperejaia/tags
-        icon: icon-tags   
+        icon: icon-tags
     contact:
         label: Contact
         url: bmut/sonperejaia/contacts
         icon: icon-user
-
+    main-menu-item:
+        label: 'Textos Legals'
+        url: bmut/sonperejaia/legalterms
+        icon: icon-legal

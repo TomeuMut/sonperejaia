@@ -6,6 +6,10 @@ use Bmut\Sonperejaia\Components\ListWines;
 use Bmut\Sonperejaia\Components\ListGallery;
 use Bmut\Sonperejaia\Components\ListTags;
 use Bmut\Sonperejaia\Components\InnerWine;
+use Bmut\Sonperejaia\Components\LegalTerms;
+use Bmut\Sonperejaia\Components\PolicyCookies;
+use Bmut\Sonperejaia\Components\PolicyPrivacity;
+
 use System\Classes\PluginBase;
 
 /**
@@ -41,6 +45,9 @@ class Plugin extends PluginBase
             ListTags::class => 'ListTags',         
             ListGallery::class => 'ListGallery',         
             HomeBlocks::class => 'HomeBlocks',    
+            LegalTerms::class => 'LegalTerms',    
+            PolicyCookies::class => 'PolicyCookies',    
+            PolicyPrivacity::class => 'PolicyPrivacity',    
         ];
     }
 
@@ -51,3 +58,4 @@ class Plugin extends PluginBase
     {
     }
 }
+
