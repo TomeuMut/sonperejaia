@@ -20,5 +20,8 @@ class Contact extends Model
      */
     public $rules = [
     ];
+    
+    public $fillable = ['name','email','text','phone'];
+
 
 }

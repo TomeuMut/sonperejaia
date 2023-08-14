@@ -2,6 +2,7 @@
 
 use Bmut\SonPereJaia\Models\Contact;
 use Cms\Classes\ComponentBase;
+use Illuminate\Support\Facades\Mail;
 use October\Rain\Support\Facades\Flash;
 
 /**
@@ -34,11 +35,11 @@ class FormContact extends ComponentBase
         $phone = post('phone');
         $msg = post('text');
         
-        $contact = Contact::create([ 'name'=>$fname ,'email' => $email, 'asunto' => $msg, 'phone' => $phone ]);
+        $contact = Contact::create([ 'name'=>$fname ,'email' => $email, 'text' => $msg, 'phone' => $phone ]);
         
-        Mail::send('maximilian::mail.contact', $contact->toArray() ,function ($message) {
-                $message->from('info@maximilianparquet.com', 'Maximilian Parquet');
-                $message->to('info@maximilianparquet.com', 'Maximilian Parquet');
+        Mail::send('sonperejaia::mail.contact', $contact->toArray() ,function ($message) {
+                $message->from('sonperejaia@gmail.com', 'Son Pere Jaia');
+                $message->to('sonperejaia@gmail.com', 'Son Pere Jaia');
             }
         );
 
