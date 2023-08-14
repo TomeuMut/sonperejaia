@@ -63,7 +63,7 @@ description = "Default layout"
             timeout: 500, // Delay para que aparezca el aviso default: 500
             expiration: 30, // expiración de la cookie, default: 30
             domain: '.sonperejaia.com', // SIN ESTO NO FUNCIONA Dominio del aviso de cookies (tiene que empezar con ., por ejemplo .refineriaweb.com
-            statement: 'http://www.vibradosbarcelo.com/politica-de-cookies', // Link a la página de cookies
+            statement: "{{'politica-de-cookies'|page}}", // Link a la página de cookies
             performance: ['preferred_locale'], // Array con las cookies de rendimiento
             analytics: [''], // Array con las cookies de analítica
             marketing: [''] // Array con las cookies de marketing
