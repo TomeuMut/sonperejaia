@@ -1,3 +1,14 @@
+
+{% put rwSeo %}
+    <title>{{wine.name}}</title>
+    <meta name="description" content="{{wine.description}}"/>
+    <meta name="title" content="{{wine.name}}"/>
+    <meta name="keywords" content="keyword,otrakey"/>
+    <meta property="og:title" content="{{wine.name}}"/>
+    <meta property="og:description" content="{{wine.description}}"/>
+    <meta property="og:image" content="{{wine.img.getPath()}}"/>
+{% endput %}
+
 <section class="container py-56">
     <div class="flex items-center -md:flex-col">
         <div class="w-1/2 -md:w-full">
