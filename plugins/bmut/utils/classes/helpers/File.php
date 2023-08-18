@@ -4,7 +4,7 @@ use Cache;
 use Exception;
 use Model;
 use File as FileHelper;
-use October\Rain\Database\Attach\Resizer;
+use October\Rain\Resize\Resizer;
 use Bmut\Utils\Models\Settings;
 use System\Models\File as BaseFile;
 
