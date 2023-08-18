@@ -426,7 +426,7 @@ function gdprCookieNotice(config) {
         document.dispatchEvent(cookiesAcceptedEvent);
         hideNotice();
 
-        window.location.reload();
+        // window.location.reload();
     }
 
     /**
@@ -455,7 +455,7 @@ function gdprCookieNotice(config) {
         document.dispatchEvent(cookiesResolvedEvent);
         hideNotice();
 
-        window.location.reload();
+        // window.location.reload();
     }
 
     /**

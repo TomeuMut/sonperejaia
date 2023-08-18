@@ -31,7 +31,20 @@ class Home extends Model
         'block_three_img_one' => \System\Models\File::class,
         'block_three_img_two' => \System\Models\File::class,
         'block_four_img' => \System\Models\File::class,        
+    ];
 
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
+
+    public $translatable = [
+        'block_one_title',
+        'block_one_subtitle',
+        'block_one_description',
+        'block_two_title',
+        'block_three_title',
+        'block_three_description',
+        'block_three_title_2',
+        'block_three_description_2',
+        'block_four_title',
     ];
 
 }
