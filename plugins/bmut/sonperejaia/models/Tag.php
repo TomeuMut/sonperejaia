@@ -22,7 +22,13 @@ class Tag extends Model
     public $table = 'bmut_sonperejaia_tags';
     
     protected $slugs = ['slug' => 'name'];
+    
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
 
+    public $translatable = [
+        'name',
+        ['slug', 'index' => true],        
+    ];
     /**
      * @var array rules for validation.
      */

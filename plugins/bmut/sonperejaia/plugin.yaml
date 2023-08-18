@@ -7,7 +7,7 @@ plugin:
 navigation:
     home:
         label: Home
-        url: bmut/sonperejaia/homes
+        url: bmut/sonperejaia/homes/update/1
         icon: icon-home
     wine:
         label: Vi
@@ -28,5 +28,5 @@ navigation:
         icon: icon-user
     main-menu-item:
         label: 'Textos Legals'
-        url: bmut/sonperejaia/legalterms
+        url: bmut/sonperejaia/legalterms/update/1
         icon: icon-legal

@@ -22,7 +22,10 @@ class Wine extends Model
     public $translatable = [
         'name',
         ['slug', 'index' => true],
-        'description',        
+        'description',
+        'type',
+        'type_grape',
+        'color'        
     ];
 
     /**
