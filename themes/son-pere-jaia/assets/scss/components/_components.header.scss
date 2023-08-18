@@ -86,3 +86,12 @@
         }
     }
 }
+.active{
+    opacity: 1;
+    .c-header__top {
+        @apply py-8;
+    }
+    .c-header__nav {
+        @apply py-16 bg-white;
+    }
+}
