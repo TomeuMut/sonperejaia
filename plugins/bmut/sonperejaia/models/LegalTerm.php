@@ -19,7 +19,14 @@ class LegalTerm extends Model
      * @var string table in the database used by the model.
      */
     public $table = 'bmut_sonperejaia_legal_terms';
+    
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
 
+    public $translatable = [
+        'legal_terms',
+        'policy_privacity',
+        'policy_cookies',
+    ];
     /**
      * @var array rules for validation.
      */
