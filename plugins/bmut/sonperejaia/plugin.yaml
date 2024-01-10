@@ -30,3 +30,7 @@ navigation:
         label: 'Textos Legals'
         url: bmut/sonperejaia/legalterms/update/1
         icon: icon-legal
+    services:
+        label: Servicios
+        url: bmut/sonperejaia/services
+        icon: icon-tree

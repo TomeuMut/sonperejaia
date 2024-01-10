@@ -1,0 +1,10 @@
+name: Services
+form: $/bmut/sonperejaia/models/service/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Service
+defaultRedirect: bmut/sonperejaia/services
+create:
+    redirect: 'bmut/sonperejaia/services/update/:id'
+    redirectClose: bmut/sonperejaia/services
+update:
+    redirect: bmut/sonperejaia/services
+    redirectClose: bmut/sonperejaia/services

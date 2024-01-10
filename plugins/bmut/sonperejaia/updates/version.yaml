@@ -33,3 +33,6 @@ v1.0.11:
 v1.0.12:
     - 'Created table bmut_sonperejaia_legal_terms'
     - builder_table_create_bmut_sonperejaia_legal_terms.php
+v1.0.13:
+    - 'Created table bmut_sonperejaia_services'
+    - builder_table_create_bmut_sonperejaia_services.php
