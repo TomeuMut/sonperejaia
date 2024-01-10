@@ -1,4 +1,4 @@
-{# <div id="gallery" class="container flex flex-wrap gallery">
+<div id="gallery" class="container flex flex-wrap gallery">
     {% for gallery in galleries %}
     <div class="gallery-item p-16 hover:opacity-50 transition hover:cursor-pointer w-1/4 {{gallery.tags.slug}} -lg:w-11/12">    
         <div class="relative">
@@ -10,16 +10,4 @@
         </div>
     </div>
     {% endfor %}       
-</div> #}
-
-<div id="gallery" class="container mx-auto gallery pb-20">      
-        <div class="">
-            {% for gallery in galleries %}                
-                <div class="gallery-item {{gallery.tags.slug}}">            
-                        <a href="{{gallery.img.getPath()}}" data-lightbox="gallery">
-                            <img class="px-16" src="{{gallery.img.getThumb('300','auto','crop')}}" alt="">
-                        </a>
-                </div>                            
-              {% endfor %}       
-    </div>    
 </div>

@@ -708,9 +708,6 @@ html {
 .h-\[600px\] {
   height: 600px;
 }
-.h-auto {
-  height: auto;
-}
 .w-1\/2 {
   width: 50%;
 }
@@ -747,11 +744,10 @@ html {
 .w-full {
   width: 100%;
 }
-.max-w-full {
-  max-width: 100%;
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -795,18 +791,12 @@ html {
 .gap-32 {
   gap: 32px;
 }
-.gap-4 {
-  gap: 4px;
-}
 .gap-48 {
   gap: 48px;
 }
 .self-center {
   -ms-flex-item-align: center;
       align-self: center;
-}
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 .rounded-md {
   border-radius: 0.375rem;
@@ -897,9 +887,6 @@ html {
 .py-8 {
   padding-top: 8px;
   padding-bottom: 8px;
-}
-.pb-20 {
-  padding-bottom: 20px;
 }
 .pb-24 {
   padding-bottom: 24px;
@@ -8352,11 +8339,6 @@ readers do not read off random characters that represent icons */
 }
 .hover\:opacity-50:hover {
   opacity: 0.5;
-}
-@media (min-width: 768px) {
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
 }
 @media (min-width: 1024px) {
   .lg\:hidden {
