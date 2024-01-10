@@ -20,10 +20,42 @@ class Service extends Model
      */
     public $table = 'bmut_sonperejaia_services';
 
+
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
+
+    public $translatable = [
+        'title',
+        ['slug', 'index' => true],
+        'description',                
+    ];
     /**
      * @var array rules for validation.
      */
-    public $rules = [
+    public $rules = [];
+
+    protected $slugs = ['slug' => 'title'];
+
+
+    public $attachOne = [
+        'img1' => \System\Models\File::class,
+        'img2' => \System\Models\File::class
     ];
+
+    public $attachMany = [
+        'galery' => \System\Models\File::class,        
+    ];
+
+    public static function translateParams($params, $oldLocale, $newLocale)
+    {
+        $newParams = $params;
+        foreach ($params as $paramName => $paramValue) {
+            $records = self::transWhere($paramName, $paramValue, $oldLocale)->first();
+            if ($records) {
+                $records->translateContext($newLocale);
+                $newParams[$paramName] = $records->$paramName;
+            }
+        }
+        return $newParams;
+    }
 
 }

@@ -1,0 +1,51 @@
+.c-services{
+    @apply grid grid-cols-3 gap-24 my-48;
+    &__item{
+        @apply py-6;
+    }
+    &__img{    
+        @apply rounded-md;
+        &:hover{
+            z-index: 9;            
+            transition: 0.4s ease all;      
+            filter: brightness(70%);                                                 
+        }
+    }
+    &__title{
+        @apply text-black text-20 transition duration-300;
+    }
+}
+.c-service{
+    @apply grid grid-cols-3 gap-24 my-48 h-full;    
+    &__img{
+        @apply col-span-1 h-[500px];
+        
+      img{
+        @apply h-full rounded-md
+      }
+    }
+    &__info{
+        @apply col-span-2
+    }
+    &__title{
+        @apply text-black text-24 transition duration-300;
+    }
+    &__description{
+        @apply text-black text-20 transition duration-300;
+    }
+
+    &__galery{
+        @apply grid grid-cols-4 gap-24 h-full my-24;    
+        &--item{
+            &:hover{
+                z-index: 9;            
+                transition: 0.4s ease all;      
+                filter: brightness(70%);                                                 
+            }
+            & img{
+                @apply rounded-sm
+            }
+        }
+    }
+}
+//  flex flex-wrap gap-28

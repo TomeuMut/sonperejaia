@@ -7,6 +7,9 @@ fields:
         label: Slug
         span: auto
         type: text
+        preset:
+            field: title
+            type: slug
     description:
         label: Description
         size: large

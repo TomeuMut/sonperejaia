@@ -22,6 +22,10 @@ navigation:
         label: Etiquetes
         url: bmut/sonperejaia/tags
         icon: icon-tags
+    services:
+        label: Servicios
+        url: bmut/sonperejaia/services
+        icon: icon-tree    
     contact:
         label: Contact
         url: bmut/sonperejaia/contacts
@@ -30,7 +34,4 @@ navigation:
         label: 'Textos Legals'
         url: bmut/sonperejaia/legalterms/update/1
         icon: icon-legal
-    services:
-        label: Servicios
-        url: bmut/sonperejaia/services
-        icon: icon-tree
+  
