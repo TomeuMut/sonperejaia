@@ -1,0 +1,27 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    position:
+        label: Position
+        span: auto
+        type: text
+    location:
+        label: Location
+        span: auto
+        type: text
+    img:
+        label: Imatge
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    description:
+        label: Description
+        size: huge
+        span: full
+        type: textarea

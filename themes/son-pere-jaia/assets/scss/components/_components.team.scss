@@ -1,0 +1,20 @@
+.c-team{
+    @apply grid grid-cols-2;
+    &__img{
+        & img{
+            @apply w-full
+        }
+    }
+    &__info{
+        @apply p-24 text-24
+    }
+    &__name{
+        @apply text-28 font-semibold border-b-primary border-b-2 w-fit;
+    }
+    &__position{ 
+       @apply text-26 py-8;
+    }
+    &__description{
+        @apply py-8;
+    }
+}

@@ -2253,6 +2253,37 @@ html {
   border-radius: 0.125rem;
 }
 
+.c-team {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.c-team__img img {
+  width: 100%;
+}
+.c-team__info {
+  padding: 24px;
+  font-size: 24px;
+}
+.c-team__name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(158 139 70 / var(--tw-border-opacity));
+  font-size: 28px;
+  font-weight: 600;
+}
+.c-team__position {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 26px;
+}
+.c-team__description {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

@@ -1,0 +1,10 @@
+name: Teams
+form: $/bmut/sonperejaia/models/team/fields.yaml
+modelClass: Bmut\SonPereJaia\Models\Team
+defaultRedirect: bmut/sonperejaia/teams
+create:
+    redirect: 'bmut/sonperejaia/teams/update/:id'
+    redirectClose: bmut/sonperejaia/teams
+update:
+    redirect: bmut/sonperejaia/teams
+    redirectClose: bmut/sonperejaia/teams
