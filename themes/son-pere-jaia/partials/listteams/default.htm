@@ -1,0 +1,32 @@
+<div class="c-team">
+    {% for team in teams %}
+        
+        {% if loop.index0 is odd %}
+
+            <div class="c-team__img">
+                <img src="{{team.img.getPath()}}">
+            </div>
+        
+            <div class="c-team__info">
+                <div class="c-team__name">{{team.name}}</div>
+                <div class="c-team__position">{{team.position}}</div>
+                <div class="c-team__description">{{team.description}}</div>
+            </div>
+
+        {% else %}
+
+            <div class="c-team__info">
+                <div class="c-team__name">{{team.name}}</div>
+                <div class="c-team__position">{{team.position}}</div>
+                <div class="c-team__description">{{team.description}}</div>
+            </div>
+        
+            <div class="c-team__img">
+                <img src="{{team.img.getPath()}}">
+            </div>
+
+        {% endif %}
+        
+    {% endfor %}
+
+</div>

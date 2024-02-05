@@ -25,5 +25,9 @@ class Team extends Model
      */
     public $rules = [
     ];
+    
+    public $attachOne = [
+        'img' => \System\Models\File::class,
+    ];
 
 }
