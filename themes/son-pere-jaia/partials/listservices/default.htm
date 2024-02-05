@@ -1,0 +1,9 @@
+<div class="c-services container">
+
+    {% for service in services %}
+        <a href="{{ 'inner-services'|page({slug: service.slug }) }}" class="c-services__item">
+            <img class="c-services__img" src="{{service.img1.getPath()}}">
+            <div class="c-services__title">{{service.title}}</div>        
+        </a>
+    {% endfor %}    
+</div>

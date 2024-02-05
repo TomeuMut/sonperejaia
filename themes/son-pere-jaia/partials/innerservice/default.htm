@@ -1,0 +1,46 @@
+{% put rwSeo %}
+    <title>{{service.name}}</title>
+    <meta name="description" content="{{service.description}}"/>
+    <meta name="title" content="{{service.title}}"/>
+    <meta name="keywords" content="keyword,otrakey"/>
+    <meta property="og:title" content="{{service.title}}"/>
+    <meta property="og:description" content="{{service.description}}"/>
+    <meta property="og:image" content="{{service.img1.getPath()}}"/>
+{% endput %}
+
+<section class="c-banner relative w-full h-[50vh]">        
+    <picture class="c-images c-images--background">    
+            <img src="{{service.img1.getPath()}}">
+    </picture>        
+    <div class="container">
+        <div class="absolute c-banner__title--inner">                
+            <div class="text-64 font-medium text-white">
+                {{service.title}}
+            </div>
+        </div>            
+    </div>
+</section>
+<div class="c-service container">
+    <div class="c-service__img">
+        <img src="{{service.img1.getPath()}}">
+    </div>
+    <div class="c-service__info">
+        <h1 class="c-service__title">{{service.title}}</h1>
+        <div class="c-service__description">{{service.description }}</div> 
+    </div>
+</div>
+<div class="container">
+    <div class="text-center">
+        <div class="text-32">
+            <div>{{'Galeria de'|_}} {{service.title}}</div>
+        </div>        
+    </div>
+</div>
+<div class="c-service__galery container">
+    {% for img in service.galery %}    
+    <a class="c-service__galery--item" href="{{img.getPath()}}" data-lightbox="image-1" data-title="My caption">
+        <img src="{{img.getPath()}}" alt="">
+    </a>
+    {% endfor %}    
+
+</div>

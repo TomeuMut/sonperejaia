@@ -1,3 +1,5 @@
+[sitePicker]
+==
 <div class="c-header fixed w-full {% if this.page.title != 'Home' %} active {% endif %}">
     <div class="c-header__nav">
         <div class="flex justify-evenly items-center container">                
@@ -24,6 +26,7 @@
                     <li><a class="{% if this.page.title == 'Serveis' %} is-active{% endif %}" href="{{'serveis'|page}}">{{'Serveis'|_}}</a></li>                        
                     <li><a class="{% if this.page.title == 'Equip' %} is-active{% endif %}" href="{{'equipo'|page}}">{{'Equipo'|_}}</a></li>                        
                     <li><a class="{% if this.page.title == 'Contact' %} is-active{% endif %}" href="{{'contacte'|page}}">{{'Contacte'|_}}</a></li>                        
+                    {% component 'sitePicker' %}
                 </ul>
             </div>
             <a data-toggle-class="is-active" data-toggle-class-not-this data-toggle-class-item="menu" class="c-header__burguer-menu" href="#">
@@ -35,4 +38,4 @@
             </a>
         </div>
     </div>
-</div> 
+</div>

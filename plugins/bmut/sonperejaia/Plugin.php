@@ -9,6 +9,8 @@ use Bmut\Sonperejaia\Components\InnerWine;
 use Bmut\Sonperejaia\Components\LegalTerms;
 use Bmut\Sonperejaia\Components\PolicyCookies;
 use Bmut\Sonperejaia\Components\PolicyPrivacity;
+use Bmut\Sonperejaia\Components\ListServices;
+use Bmut\Sonperejaia\Components\InnerService;
 
 use System\Classes\PluginBase;
 
@@ -48,6 +50,8 @@ class Plugin extends PluginBase
             LegalTerms::class => 'LegalTerms',    
             PolicyCookies::class => 'PolicyCookies',    
             PolicyPrivacity::class => 'PolicyPrivacity',    
+            ListServices::class => 'ListServices',
+            InnerService::class => 'InnerService',
         ];
     }
 

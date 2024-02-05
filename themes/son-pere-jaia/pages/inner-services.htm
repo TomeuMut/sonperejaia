@@ -1,62 +1,10 @@
 title = "Inner Services"
 layout = "default"
 url = "/servicios/:slug"
-==
-<section class="c-banner relative w-full h-[50vh]">        
-    <picture class="c-images c-images--background">    
-            <img src="https://source.unsplash.com/1920x350/?farm">
-    </picture>        
-    <div class="container">
-        <div class="absolute c-banner__title--inner">                
-            <div class="text-64 font-medium text-white">
-                Serviciso dsadasdsa
-            </div>
-        </div>            
-    </div>
-</section>
-<div class="c-service container">
-    <div class="c-service__img">
-        <img src="https://source.unsplash.com/500x500/?farm">
-    </div>
-    <div class="c-service__info">
-        <div class="c-service__title">Poda de Viñedos</div>
-        <div class="c-service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eaque saepe ut, aperiam laboriosam error hic voluptate ducimus quasi eius assumenda esse facilis fugit numquam magni neque. Suscipit, nobis rerum?</div> 
-    </div>
-</div>
-<div class="container">
-    <div class="text-center">
-        <div class="text-32">
-            <h1>Galeria del Servicio</h1>
-        </div>
-        <!-- <div class="text-32">
-            {{'Contacti amb nosaltres'|_}}
-        </div> -->
-    </div>
-</div>
-<div class="c-service__galery container">
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
-    <div class="c-service__galery--item">
-        <img src="https://source.unsplash.com/500x500/?farm" alt="">
-    </div>
 
-</div>
+localeUrl[ca] = "serveis/:slug"
+localeUrl[en-gb] = "services/:slug"
+[InnerService]
+==
+
+{% component 'InnerService' %}
