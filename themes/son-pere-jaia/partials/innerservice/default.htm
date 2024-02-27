@@ -27,6 +27,33 @@
     <div class="c-service__info">
         <h1 class="c-service__title">{{service.title}}</h1>
         <div class="c-service__description">{{service.description }}</div> 
+        <div class="c-service__form">
+            <form action="POST" data-request="onSend" data-request-flash="">
+                <div class="c-service__form--input">
+                    <label for="name">{{'Nom i Llinatges*'|_}} </label>
+                    <input type="text" name="name" id="name" placeholder="{{'Introdueix Nom i Llinatges*'|_}}">
+                </div>
+                <div class="c-service__form--input">
+                    <label for="email">{{'Adreça electrònica*'|_}}</label>
+                    <input required="" type="text" id="email" name="email" placeholder="{{'Introdueix la teva adreça electrònica*'|_}}">
+                </div>
+                <div class="c-service__form--input">
+                    <label for="phone">{{'Telèfon*'|_}}</label>
+                    <input required="" type="text" name="phone" id="phone" placeholder="{{'Introdueix el teu número de telèfon*'|_}}">
+                </div>
+                <div class="c-service__form--textarea">
+                    <label for="text">{{'Estic interesat en aquest servei'|_}} - {{service.title}}</label>
+                    <textarea name="text" id="text" placeholder="{{'Escriu el teu comentari o dubtes'|_}}"></textarea>
+                </div>
+                <div class="c-service__form--checkbox">
+                    <input required="" type="checkbox">
+                    <a class="hover:text-primary transition-all" href="{{'avis-legal'|page}}">
+                        {{'Accept la política de privadesa i protecció de dades'|_}}
+                    </a> 
+                    </div>
+                <button class="border border-primary px-16 py-8 hover:bg-primary hover:text-white transition-all" type="submit">{{'Enviar'|_}}</button>
+            </form>
+        </div>
     </div>
 </div>
 <div class="container">

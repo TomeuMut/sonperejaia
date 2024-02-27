@@ -2,7 +2,9 @@
 
 use Bmut\SonPereJaia\Models\Service;
 use Cms\Classes\ComponentBase;
-
+use Illuminate\Support\Facades\Mail;
+use October\Rain\Support\Facades\Flash;
+use Bmut\SonPereJaia\Models\Contact;
 /**
  * InnerService Component
  *
@@ -33,4 +35,24 @@ class InnerService extends ComponentBase
 
         $this->page['service'] = $service;
     }
+
+    function onSend() {
+
+        // Collect input
+        $fname = post('name');
+        $email = post('email');        
+        $phone = post('phone');
+        $msg = post('text');
+        
+        $contact = Contact::create([ 'name'=>$fname ,'email' => $email, 'text' => $msg, 'phone' => $phone ]);
+        
+        Mail::send('sonperejaia::mail.contact', $contact->toArray() ,function ($message) {
+                $message->from('sonperejaia@gmail.com', 'Son Pere Jaia');
+                $message->to('sonperejaia@gmail.com', 'Son Pere Jaia');
+            }
+        );
+
+        Flash::success('El formulario ha sido enviado con exito');
+
+        }
 }
