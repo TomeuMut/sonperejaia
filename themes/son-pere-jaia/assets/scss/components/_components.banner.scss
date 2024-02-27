@@ -1,20 +1,26 @@
 .c-banner{
     &__title{
-        top: 35%;
-        left: 43.5%;
+        // top: 35%;
+        // left: 43.5%;
         text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         @media only screen and (max-width: 769px) {            
-            top: 25%;
-            left: 25%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         @media only screen and (max-width: 430px) {        
-            top: 5%;
-            left: 10%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     &__title--inner{
-        top: 35%;
-        left: 45%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
         text-align: center;
         @media only screen and (max-width: 769px) {     
             left: 35%;
