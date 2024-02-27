@@ -1,10 +1,10 @@
 .c-services{
-    @apply grid grid-cols-3 gap-24 my-48;
+    @apply grid grid-cols-3 gap-24 my-48 -lg:grid-cols-2 -sm:grid-cols-1;
     &__item{
         @apply py-6;
     }
     &__img{    
-        @apply rounded-md;
+        @apply rounded-md object-cover;
         &:hover{
             z-index: 9;            
             transition: 0.4s ease all;      
@@ -12,20 +12,20 @@
         }
     }
     &__title{
-        @apply text-black text-20 transition duration-300;
+        @apply text-black text-24 transition duration-300 pt-8;
     }
 }
 .c-service{
-    @apply grid grid-cols-3 gap-24 my-48 h-full;    
+    @apply grid grid-cols-3 gap-24 my-48 h-full -lg:grid-cols-2 -sm:grid-cols-1;    
     &__img{
-        @apply col-span-1 h-[500px];
+        @apply col-span-1;
         
       img{
-        @apply h-full rounded-md
+        @apply h-full rounded-md object-cover;
       }
     }
     &__info{
-        @apply col-span-2
+        @apply col-span-2 -lg:col-span-1
     }
     &__title{
         @apply text-black text-24 transition duration-300;
@@ -33,9 +33,29 @@
     &__description{
         @apply text-black text-20 transition duration-300;
     }
+    &__form{
+        & form {
+            @apply py-16;
+        }
+        &--input {
+            @apply py-3 text-18 flex flex-col;   
+            & input{
+                @apply w-1/2 border-0 border-b-[1px] border-primary;
+            }
+        }
+        &--textarea{
+            @apply py-3 text-18 flex flex-col;   
+            & textarea{
+                @apply w-1/2 h-[150px] border-0 border-b-[1px] border-primary;
+            }
+        }
+        &--checkbox{
+            
+        }
+    }
 
     &__galery{
-        @apply grid grid-cols-4 gap-24 h-full my-24;    
+        @apply grid grid-cols-4 gap-24 h-full my-24 -lg:grid-cols-2 -sm:grid-cols-1;    
         &--item{
             &:hover{
                 z-index: 9;            
@@ -48,4 +68,3 @@
         }
     }
 }
-//  flex flex-wrap gap-28
