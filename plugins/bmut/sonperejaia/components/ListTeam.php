@@ -28,8 +28,7 @@ class ListTeam extends ComponentBase
 
     public function onRun()
     {
-        $teams = Team::get();
-        
+        $teams = Team::get();        
         $this->page['teams'] = $teams;
     }
 }

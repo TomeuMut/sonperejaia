@@ -11,6 +11,7 @@ use Bmut\Sonperejaia\Components\PolicyCookies;
 use Bmut\Sonperejaia\Components\PolicyPrivacity;
 use Bmut\Sonperejaia\Components\ListServices;
 use Bmut\Sonperejaia\Components\InnerService;
+use Bmut\Sonperejaia\Components\ListTeam;
 
 use System\Classes\PluginBase;
 
@@ -52,6 +53,7 @@ class Plugin extends PluginBase
             PolicyPrivacity::class => 'PolicyPrivacity',    
             ListServices::class => 'ListServices',
             InnerService::class => 'InnerService',
+            ListTeam::class => 'ListTeam',
         ];
     }
 

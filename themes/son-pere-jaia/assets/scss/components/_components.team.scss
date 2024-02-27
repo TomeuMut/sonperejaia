@@ -2,7 +2,7 @@
     @apply grid grid-cols-2;
     &__img{
         & img{
-            @apply w-full
+            @apply w-full h-[600px] object-cover 
         }
     }
     &__info{
